@@ -16,7 +16,7 @@
 
 .list-style {
 	display: flex;
-
+justify-content: center;
 	flex-wrap: wrap;
 	gap: 20px;
 	margin-top: 30px;
@@ -25,6 +25,7 @@
 .img-container {
 	overflow: hidden;
 	border-radius: 10px;
+	max-height: 160px;
 }
 
 .project-item {
