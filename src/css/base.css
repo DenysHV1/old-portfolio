@@ -1,0 +1,54 @@
+body {
+	line-height: 1.5;
+	font-size: 16px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+
+	font-family: "SUSE", sans-serif;
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.js-games{
+	background: -webkit-linear-gradient(90deg,#0008ff,#1e36f1,#4f5af8);
+	background: linear-gradient(90deg,#0008ff,#1e36f1,#4f5af8);
+}
+.js-forms{
+	background: -webkit-linear-gradient(90deg,#9e50d3,#1a1fff,#1e98dd); 
+	background: linear-gradient(90deg,#9e50d3,#1a1fff,#1e98dd);
+}
+.js-features{
+	background: -webkit-linear-gradient(90deg,#0c00ff,#9c00ff);
+	background: linear-gradient(90deg,#0c00ff,#9c00ff);
+}
+.js-info{
+	background: -webkit-linear-gradient(90deg,#9900ff,#4d00db,#000000);
+	background: linear-gradient(90deg,#9900ff,#4d00db,#000000);
+}
+.js-projects{
+	background: -webkit-linear-gradient(90deg,#0f00db,#1100ff,#1e00ff,#0007e0,#000985);
+	background: linear-gradient(90deg,#0f00db,#1100ff,#1e00ff,#0007e0,#000985);
+}
+.simple-websides{
+	background: -webkit-linear-gradient(90deg,#0011ff,#8c00ff);
+	background: linear-gradient(90deg,#0011ff,#8c00ff);
+}
