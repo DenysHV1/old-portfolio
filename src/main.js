@@ -3,34 +3,35 @@ import { projectArr } from './project-arr';
 //todo -------------------------------------------------------------------------
 const jsFeaturesEl = document.querySelector('.js-features-list');
 function setFeaturesMarkup(projectArrInner) {
-	return projectArrInner.map(
-		({
-			nameOfProjectGitText,
-			nameOfProjectGit,
-			nameOFProjectPreviewText,
-			nameOFProjectPreview,
-			categoryText,
-			category,
-			typeOfProjectText,
-			typeOfProject,
-			status,
-			imgPreview,
-			imgGallery,
-			alt,
-			codeLinkText,
-			codeLink,
-			siteText,
-			siteLink,
-			technologyText,
-			technology1,
-			technology2,
-			descriptionText,
-			description,
-			projectNumTExt,
-			ProjectNumber,
-		}) => {
-			if (status && category === 'JS Features') {
-				return`
+	return projectArrInner
+		.map(
+			({
+				nameOfProjectGitText,
+				nameOfProjectGit,
+				nameOFProjectPreviewText,
+				nameOFProjectPreview,
+				categoryText,
+				category,
+				typeOfProjectText,
+				typeOfProject,
+				status,
+				imgPreview,
+				imgGallery,
+				alt,
+				codeLinkText,
+				codeLink,
+				siteText,
+				siteLink,
+				technologyText,
+				technology1,
+				technology2,
+				descriptionText,
+				description,
+				projectNumTExt,
+				ProjectNumber,
+			}) => {
+				if (status && category === 'JS Features') {
+					return `
 		<li class="project-item">
 <div class="img-container">
 	<a class="gallery-link" width='1112px' height = '640px' href="${imgGallery}">
@@ -78,9 +79,11 @@ function setFeaturesMarkup(projectArrInner) {
 		<p class="txt">${descriptionText}</p>
 		<p class="description">${description}</p>
 	</div>
-</li>`}}).join('');
-
-	
+</li>`;
+				}
+			}
+		)
+		.join('');
 }
 jsFeaturesEl.insertAdjacentHTML('beforeend', setFeaturesMarkup(projectArr));
 //*---------------------------------------------------------------
@@ -89,34 +92,35 @@ jsFeaturesEl.insertAdjacentHTML('beforeend', setFeaturesMarkup(projectArr));
 const jsFormsEl = document.querySelector('.js-forms-list');
 
 function setFormMarkup(projectArrInner) {
-	return projectArrInner.map(
-		({
-			nameOfProjectGitText,
-			nameOfProjectGit,
-			nameOFProjectPreviewText,
-			nameOFProjectPreview,
-			categoryText,
-			category,
-			typeOfProjectText,
-			typeOfProject,
-			status,
-			imgPreview,
-			imgGallery,
-			alt,
-			codeLinkText,
-			codeLink,
-			siteText,
-			siteLink,
-			technologyText,
-			technology1,
-			technology2,
-			descriptionText,
-			description,
-			projectNumTExt,
-			ProjectNumber,
-		}) => {
-			if (status && category === 'Forms') {
-				return`
+	return projectArrInner
+		.map(
+			({
+				nameOfProjectGitText,
+				nameOfProjectGit,
+				nameOFProjectPreviewText,
+				nameOFProjectPreview,
+				categoryText,
+				category,
+				typeOfProjectText,
+				typeOfProject,
+				status,
+				imgPreview,
+				imgGallery,
+				alt,
+				codeLinkText,
+				codeLink,
+				siteText,
+				siteLink,
+				technologyText,
+				technology1,
+				technology2,
+				descriptionText,
+				description,
+				projectNumTExt,
+				ProjectNumber,
+			}) => {
+				if (status && category === 'Forms') {
+					return `
 		<li class="project-item">
 <div class="img-container">
 	<a class="gallery-link" width='1112px' height = '640px' href="${imgGallery}">
@@ -164,9 +168,11 @@ function setFormMarkup(projectArrInner) {
 		<p class="txt">${descriptionText}</p>
 		<p class="description">${description}</p>
 	</div>
-</li>`}}).join('');
-
-	
+</li>`;
+				}
+			}
+		)
+		.join('');
 }
 jsFormsEl.insertAdjacentHTML('beforeend', setFormMarkup(projectArr));
 //*---------------------------------------------------------------
@@ -175,34 +181,35 @@ jsFormsEl.insertAdjacentHTML('beforeend', setFormMarkup(projectArr));
 const jsGamesEl = document.querySelector('.js-games-list');
 
 function setGamesMarkup(projectArrInner) {
-	return projectArrInner.map(
-		({
-			nameOfProjectGitText,
-			nameOfProjectGit,
-			nameOFProjectPreviewText,
-			nameOFProjectPreview,
-			categoryText,
-			category,
-			typeOfProjectText,
-			typeOfProject,
-			status,
-			imgPreview,
-			imgGallery,
-			alt,
-			codeLinkText,
-			codeLink,
-			siteText,
-			siteLink,
-			technologyText,
-			technology1,
-			technology2,
-			descriptionText,
-			description,
-			projectNumTExt,
-			ProjectNumber,
-		}) => {
-			if (status && category === 'Games') {
-				return`
+	return projectArrInner
+		.map(
+			({
+				nameOfProjectGitText,
+				nameOfProjectGit,
+				nameOFProjectPreviewText,
+				nameOFProjectPreview,
+				categoryText,
+				category,
+				typeOfProjectText,
+				typeOfProject,
+				status,
+				imgPreview,
+				imgGallery,
+				alt,
+				codeLinkText,
+				codeLink,
+				siteText,
+				siteLink,
+				technologyText,
+				technology1,
+				technology2,
+				descriptionText,
+				description,
+				projectNumTExt,
+				ProjectNumber,
+			}) => {
+				if (status && category === 'Games') {
+					return `
 		<li class="project-item">
 <div class="img-container">
 	<a class="gallery-link" width='1112px' height = '640px' href="${imgGallery}">
@@ -250,9 +257,11 @@ function setGamesMarkup(projectArrInner) {
 		<p class="txt">${descriptionText}</p>
 		<p class="description">${description}</p>
 	</div>
-</li>`}}).join('');
-
-	
+</li>`;
+				}
+			}
+		)
+		.join('');
 }
 jsGamesEl.insertAdjacentHTML('beforeend', setGamesMarkup(projectArr));
 //*---------------------------------------------------------------
@@ -261,34 +270,35 @@ jsGamesEl.insertAdjacentHTML('beforeend', setGamesMarkup(projectArr));
 const jsProjectsEl = document.querySelector('.js-projects-list');
 
 function setJsProjectsMarkup(projectArrInner) {
-	return projectArrInner.map(
-		({
-			nameOfProjectGitText,
-			nameOfProjectGit,
-			nameOFProjectPreviewText,
-			nameOFProjectPreview,
-			categoryText,
-			category,
-			typeOfProjectText,
-			typeOfProject,
-			status,
-			imgPreview,
-			imgGallery,
-			alt,
-			codeLinkText,
-			codeLink,
-			siteText,
-			siteLink,
-			technologyText,
-			technology1,
-			technology2,
-			descriptionText,
-			description,
-			projectNumTExt,
-			ProjectNumber,
-		}) => {
-			if (status && category === 'JS Projects') {
-				return`
+	return projectArrInner
+		.map(
+			({
+				nameOfProjectGitText,
+				nameOfProjectGit,
+				nameOFProjectPreviewText,
+				nameOFProjectPreview,
+				categoryText,
+				category,
+				typeOfProjectText,
+				typeOfProject,
+				status,
+				imgPreview,
+				imgGallery,
+				alt,
+				codeLinkText,
+				codeLink,
+				siteText,
+				siteLink,
+				technologyText,
+				technology1,
+				technology2,
+				descriptionText,
+				description,
+				projectNumTExt,
+				ProjectNumber,
+			}) => {
+				if (status && category === 'JS Projects') {
+					return `
 		<li class="project-item">
 <div class="img-container">
 	<a class="gallery-link" width='1112px' height = '640px' href="${imgGallery}">
@@ -336,9 +346,11 @@ function setJsProjectsMarkup(projectArrInner) {
 		<p class="txt">${descriptionText}</p>
 		<p class="description">${description}</p>
 	</div>
-</li>`}}).join('');
-
-	
+</li>`;
+				}
+			}
+		)
+		.join('');
 }
 jsProjectsEl.insertAdjacentHTML('beforeend', setJsProjectsMarkup(projectArr));
 //*---------------------------------------------------------------
@@ -347,34 +359,35 @@ jsProjectsEl.insertAdjacentHTML('beforeend', setJsProjectsMarkup(projectArr));
 const simpleWebSidesEl = document.querySelector('.simple-webSides-list-js');
 
 function setSimpleWebSidesMarkup(projectArrInner) {
-	return projectArrInner.map(
-		({
-			nameOfProjectGitText,
-			nameOfProjectGit,
-			nameOFProjectPreviewText,
-			nameOFProjectPreview,
-			categoryText,
-			category,
-			typeOfProjectText,
-			typeOfProject,
-			status,
-			imgPreview,
-			imgGallery,
-			alt,
-			codeLinkText,
-			codeLink,
-			siteText,
-			siteLink,
-			technologyText,
-			technology1,
-			technology2,
-			descriptionText,
-			description,
-			projectNumTExt,
-			ProjectNumber,
-		}) => {
-			if (status && category === 'Web Sides') {
-				return`
+	return projectArrInner
+		.map(
+			({
+				nameOfProjectGitText,
+				nameOfProjectGit,
+				nameOFProjectPreviewText,
+				nameOFProjectPreview,
+				categoryText,
+				category,
+				typeOfProjectText,
+				typeOfProject,
+				status,
+				imgPreview,
+				imgGallery,
+				alt,
+				codeLinkText,
+				codeLink,
+				siteText,
+				siteLink,
+				technologyText,
+				technology1,
+				technology2,
+				descriptionText,
+				description,
+				projectNumTExt,
+				ProjectNumber,
+			}) => {
+				if (status && category === 'Web Sides') {
+					return `
 		<li class="project-item">
 <div class="img-container">
 	<a class="gallery-link" width='1112px' height = '640px' href="${imgGallery}">
@@ -422,11 +435,16 @@ function setSimpleWebSidesMarkup(projectArrInner) {
 		<p class="txt">${descriptionText}</p>
 		<p class="description">${description}</p>
 	</div>
-</li>`}}).join('');
-
-	
+</li>`;
+				}
+			}
+		)
+		.join('');
 }
-simpleWebSidesEl.insertAdjacentHTML('beforeend', setSimpleWebSidesMarkup(projectArr));
+simpleWebSidesEl.insertAdjacentHTML(
+	'beforeend',
+	setSimpleWebSidesMarkup(projectArr)
+);
 //*---------------------------------------------------------------
 
 //todo -------------------------------------------------------------------------
@@ -439,4 +457,4 @@ new SimpleLightbox('.project-item .img-container a', {
 	captions: true,
 	captionsData: 'alt',
 	captionDelay: 250,
-  });
+});
