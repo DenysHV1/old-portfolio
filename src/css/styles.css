@@ -10,6 +10,9 @@
 .main-title {
 	font-size: 48px;
 	font-family: 'Nerko One', cursive;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	color: rgb(29, 0, 109);
 }
 
 .section-style {
