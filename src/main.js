@@ -50,7 +50,7 @@ function setFeaturesMarkup(projectArrInner) {
 	</div>
 	<div class="block-container">
 		<p class="txt">${nameOfProjectGitText}</p>
-		<p class="name-info">${nameOfProjectGit}</p>
+		<p class="name-info-git">${nameOfProjectGit}</p>
 	</div>
 	<div class="block-container">
 		<p class="txt">${categoryText}</p>
@@ -86,6 +86,47 @@ function setFeaturesMarkup(projectArrInner) {
 		.join('');
 }
 jsFeaturesEl.insertAdjacentHTML('beforeend', setFeaturesMarkup(projectArr));
+
+const jsFeaturesElItems = jsFeaturesEl.querySelectorAll('li');
+
+if (jsFeaturesElItems.length <= 2 && jsFeaturesEl.offsetWidth > 1100) {
+	jsFeaturesEl.style.justifyContent = 'start';
+} else {
+	jsFeaturesEl.style.justifyContent = 'center';
+}
+
+//todo 2
+if (jsFeaturesElItems.length >= 4) {
+	jsFeaturesElItems.forEach((item, inx) => {
+		if (inx > 2) {
+			item.style.display = 'none';
+		}
+	});
+	jsFeaturesEl.insertAdjacentHTML(
+		'beforeend',
+		`<button type="button" class="shove-more-WebSides"></button>`
+	);
+	const WebSidesBtn = jsFeaturesEl.querySelector('.shove-more-WebSides');
+	let isExpanded = false;
+	WebSidesBtn.textContent = 'Shove more';
+	WebSidesBtn.addEventListener('click', () => {
+		if (isExpanded) {
+			WebSidesBtn.textContent = 'Shove more';
+			jsFeaturesElItems.forEach((item, inx) => {
+				if (inx > 2) {
+					item.style.display = 'none';
+				}
+			});
+		} else {
+			WebSidesBtn.textContent = 'Hide';
+			jsFeaturesElItems.forEach(item => {
+				item.style.display = 'block';
+			});
+		}
+		isExpanded = !isExpanded;
+	});
+}
+
 //*---------------------------------------------------------------
 
 //todo -------------------------------------------------------------------------
@@ -139,7 +180,7 @@ function setFormMarkup(projectArrInner) {
 	</div>
 	<div class="block-container">
 		<p class="txt">${nameOfProjectGitText}</p>
-		<p class="name-info">${nameOfProjectGit}</p>
+		<p class="name-info-git">${nameOfProjectGit}</p>
 	</div>
 	<div class="block-container">
 		<p class="txt">${categoryText}</p>
@@ -175,6 +216,47 @@ function setFormMarkup(projectArrInner) {
 		.join('');
 }
 jsFormsEl.insertAdjacentHTML('beforeend', setFormMarkup(projectArr));
+
+const jsFormsElItems = jsFormsEl.querySelectorAll('li');
+
+if (jsFormsElItems.length <= 2 && jsFormsEl.offsetWidth > 1100) {
+	jsFormsEl.style.justifyContent = 'start';
+} else {
+	jsFormsEl.style.justifyContent = 'center';
+}
+
+//todo 2
+if (jsFormsElItems.length >= 4) {
+	jsFormsElItems.forEach((item, inx) => {
+		if (inx > 2) {
+			item.style.display = 'none';
+		}
+	});
+	jsFormsEl.insertAdjacentHTML(
+		'beforeend',
+		`<button type="button" class="shove-more-WebSides"></button>`
+	);
+	const WebSidesBtn = jsFormsEl.querySelector('.shove-more-WebSides');
+	let isExpanded = false;
+	WebSidesBtn.textContent = 'Shove more';
+	WebSidesBtn.addEventListener('click', () => {
+		if (isExpanded) {
+			WebSidesBtn.textContent = 'Shove more';
+			jsFormsElItems.forEach((item, inx) => {
+				if (inx > 2) {
+					item.style.display = 'none';
+				}
+			});
+		} else {
+			WebSidesBtn.textContent = 'Hide';
+			jsFormsElItems.forEach(item => {
+				item.style.display = 'block';
+			});
+		}
+		isExpanded = !isExpanded;
+	});
+}
+
 //*---------------------------------------------------------------
 
 //todo -------------------------------------------------------------------------
@@ -228,7 +310,7 @@ function setGamesMarkup(projectArrInner) {
 	</div>
 	<div class="block-container">
 		<p class="txt">${nameOfProjectGitText}</p>
-		<p class="name-info">${nameOfProjectGit}</p>
+		<p class="name-info-git">${nameOfProjectGit}</p>
 	</div>
 	<div class="block-container">
 		<p class="txt">${categoryText}</p>
@@ -264,6 +346,47 @@ function setGamesMarkup(projectArrInner) {
 		.join('');
 }
 jsGamesEl.insertAdjacentHTML('beforeend', setGamesMarkup(projectArr));
+
+const jsGamesElItems = jsGamesEl.querySelectorAll('li');
+
+if (jsGamesElItems.length <= 2 && jsGamesEl.offsetWidth > 1100) {
+	jsGamesEl.style.justifyContent = 'start';
+} else {
+	jsGamesEl.style.justifyContent = 'center';
+}
+
+//todo 2
+if (jsGamesElItems.length >= 4) {
+	jsGamesElItems.forEach((item, inx) => {
+		if (inx > 2) {
+			item.style.display = 'none';
+		}
+	});
+	jsGamesEl.insertAdjacentHTML(
+		'beforeend',
+		`<button type="button" class="shove-more-WebSides"></button>`
+	);
+	const WebSidesBtn = jsGamesEl.querySelector('.shove-more-WebSides');
+	let isExpanded = false;
+	WebSidesBtn.textContent = 'Shove more';
+	WebSidesBtn.addEventListener('click', () => {
+		if (isExpanded) {
+			WebSidesBtn.textContent = 'Shove more';
+			jsGamesElItems.forEach((item, inx) => {
+				if (inx > 2) {
+					item.style.display = 'none';
+				}
+			});
+		} else {
+			WebSidesBtn.textContent = 'Hide';
+			jsGamesElItems.forEach(item => {
+				item.style.display = 'block';
+			});
+		}
+		isExpanded = !isExpanded;
+	});
+}
+
 //*---------------------------------------------------------------
 
 //todo -------------------------------------------------------------------------
@@ -317,7 +440,7 @@ function setJsProjectsMarkup(projectArrInner) {
 	</div>
 	<div class="block-container">
 		<p class="txt">${nameOfProjectGitText}</p>
-		<p class="name-info">${nameOfProjectGit}</p>
+		<p class="name-info-git">${nameOfProjectGit}</p>
 	</div>
 	<div class="block-container">
 		<p class="txt">${categoryText}</p>
@@ -353,6 +476,48 @@ function setJsProjectsMarkup(projectArrInner) {
 		.join('');
 }
 jsProjectsEl.insertAdjacentHTML('beforeend', setJsProjectsMarkup(projectArr));
+
+const jsProjectsItems = jsProjectsEl.querySelectorAll('li');
+
+if (jsProjectsItems.length <= 2 && jsProjectsEl.offsetWidth > 1100) {
+	jsProjectsEl.style.justifyContent = 'start';
+} else {
+	jsProjectsEl.style.justifyContent = 'center';
+}
+
+//todo 2
+if (jsProjectsItems.length >= 4) {
+	jsProjectsItems.forEach((item, inx) => {
+		if (inx > 2) {
+			item.style.display = 'none';
+		}
+	});
+	jsProjectsEl.insertAdjacentHTML(
+		'beforeend',
+		`<button type="button" class="shove-more-WebSides"></button>`
+	);
+
+	const WebSidesBtn = jsProjectsEl.querySelector('.shove-more-WebSides');
+	let isExpanded = false;
+	WebSidesBtn.textContent = 'Shove more';
+	WebSidesBtn.addEventListener('click', () => {
+		if (isExpanded) {
+			WebSidesBtn.textContent = 'Shove more';
+			jsProjectsItems.forEach((item, inx) => {
+				if (inx > 2) {
+					item.style.display = 'none';
+				}
+			});
+		} else {
+			WebSidesBtn.textContent = 'Hide';
+			jsProjectsItems.forEach(item => {
+				item.style.display = 'block';
+			});
+		}
+		isExpanded = !isExpanded;
+	});
+}
+
 //*---------------------------------------------------------------
 
 //todo -------------------------------------------------------------------------
@@ -406,7 +571,7 @@ function setSimpleWebSidesMarkup(projectArrInner) {
 	</div>
 	<div class="block-container">
 		<p class="txt">${nameOfProjectGitText}</p>
-		<p class="name-info">${nameOfProjectGit}</p>
+		<p class="name-info-git">${nameOfProjectGit}</p>
 	</div>
 	<div class="block-container">
 		<p class="txt">${categoryText}</p>
@@ -445,6 +610,49 @@ simpleWebSidesEl.insertAdjacentHTML(
 	'beforeend',
 	setSimpleWebSidesMarkup(projectArr)
 );
+
+const simpleWebSidesItem = simpleWebSidesEl.querySelectorAll('li');
+
+//todo 1
+if (simpleWebSidesItem.length <= 2 && simpleWebSidesEl.offsetWidth > 1100) {
+	simpleWebSidesEl.style.justifyContent = 'start';
+} else {
+	simpleWebSidesEl.style.justifyContent = 'center';
+}
+
+//todo 2
+if (simpleWebSidesItem.length >= 4) {
+	simpleWebSidesItem.forEach((item, inx) => {
+		if (inx > 2) {
+			item.style.display = 'none';
+		}
+	});
+	simpleWebSidesEl.insertAdjacentHTML(
+		'beforeend',
+		`<button type="button" class="shove-more-WebSides"></button>`
+	);
+	const WebSidesBtn = simpleWebSidesEl.querySelector('.shove-more-WebSides');
+	let isExpanded = false;
+
+	WebSidesBtn.textContent = 'Shove more';
+	WebSidesBtn.addEventListener('click', () => {
+		if (isExpanded) {
+			WebSidesBtn.textContent = 'Shove more';
+			simpleWebSidesItem.forEach((item, inx) => {
+				if (inx > 2) {
+					item.style.display = 'none';
+				}
+			});
+		} else {
+			WebSidesBtn.textContent = 'Hide';
+			simpleWebSidesItem.forEach(item => {
+				item.style.display = 'block';
+			});
+		}
+		isExpanded = !isExpanded;
+	});
+}
+
 //*---------------------------------------------------------------
 
 //todo -------------------------------------------------------------------------
@@ -457,4 +665,14 @@ new SimpleLightbox('.project-item .img-container a', {
 	captions: true,
 	captionsData: 'alt',
 	captionDelay: 250,
+});
+
+// style settings
+
+const technologyItems = document.querySelectorAll('.technology');
+
+technologyItems.forEach(item => {
+	if (!item.textContent) {
+		item.style.display = 'none';
+	}
 });

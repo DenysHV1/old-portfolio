@@ -7,19 +7,25 @@
 @import url('./base.css');
 @import url('./reset.css');
 
+.main-title {
+	font-size: 48px;
+	font-family: 'Nerko One', cursive;
+}
+
 .section-style {
 	width: 100%;
-	padding-top: 50px;
+	padding-top: 20px;
 	padding-bottom: 50px;
 	border-bottom: 3px solid black;
 }
 
 .list-style {
 	display: flex;
-justify-content: center;
+	justify-content: center;
 	flex-wrap: wrap;
 	gap: 20px;
 	margin-top: 30px;
+	position: relative;
 }
 
 .img-container {
@@ -51,6 +57,7 @@ justify-content: center;
 
 .project-item-info {
 	display: flex;
+	justify-content: space-between;
 	gap: 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -68,6 +75,7 @@ justify-content: center;
 }
 
 .site {
+	font-family: 'Nerko One', cursive;
 	padding: 10px 40px;
 	background: -webkit-linear-gradient(90deg, #2b1263, #3a00ed);
 	background: linear-gradient(90deg, #2b1263, #3a00ed);
@@ -82,6 +90,7 @@ justify-content: center;
 }
 
 .code {
+	font-family: 'Nerko One', cursive;
 	padding: 10px 40px;
 	background: -webkit-linear-gradient(
 		90deg,
@@ -113,11 +122,20 @@ justify-content: center;
 	padding: 5px;
 	border-radius: 10px;
 	background-color: #9e9d9d;
+	font-family: 'Nerko One', cursive;
 }
 
 .name-info {
 	color: #028709;
 	font-weight: 500;
+	font-family: 'Nerko One', cursive;
+}
+
+.name-info-git {
+	/* background-color: #36e33f; */
+	background-color: #23a3ff;
+	font-weight: 800;
+	padding: 5px 10px;
 }
 
 .project_number {
@@ -129,5 +147,38 @@ justify-content: center;
 
 .title {
 	font-size: 36px;
+	font-weight: 400;
 	color: aliceblue;
+	font-family: 'Nerko One', cursive;
+}
+
+.shove-more-WebSides {
+	font-family: 'Nerko One', cursive;
+	position: absolute;
+	bottom: -40px;
+	padding: 5px 30px;
+	background: -webkit-linear-gradient(
+		90deg,
+		#0f00db,
+		#1100ff,
+		#1e00ff,
+		#0007e0,
+		#000985
+	);
+	background: linear-gradient(
+		90deg,
+		#0f00db,
+		#1100ff,
+		#1e00ff,
+		#0007e0,
+		#000985
+	);
+	font-size: 18px;
+	color: #fff;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+		rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+		rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+		rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+		rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
