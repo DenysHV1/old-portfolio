@@ -10,10 +10,11 @@
 .main-title {
 	font-size: 48px;
 	font-family: 'Nerko One', cursive;
-	color: rgb(29, 0, 109);
+	color: rgb(0, 119, 193);
 	margin-bottom: 20px;
 	margin-top: 10px;
 }
+
 
 .section-style {
 	width: 100%;
@@ -179,6 +180,29 @@
 	text-align: right;
 	padding-right: 25px;
 	border-radius: 10px;
+}
+
+.js-features-title{
+	background: -webkit-linear-gradient(90deg,#0f0055,#4b3cff,#b4c3ff);
+	background: linear-gradient(90deg,#0f0055,#4b3cff,#b4c3ff);
+}
+.js-forms-title{
+	background: -webkit-linear-gradient(90deg,#0f0055,#4b3cff,#b4c3ff);
+	background: linear-gradient(90deg,#0f0055,#4b3cff,#b4c3ff);
+}
+.js-games-title{
+	background: -webkit-linear-gradient(90deg,#0f0055,#4b3cff,#b4c3ff);
+	background: linear-gradient(90deg,#0f0055,#4b3cff,#b4c3ff);
+}
+.js-projects-title{
+	background: -webkit-linear-gradient(90deg,#0f0055,#4b3cff,#b4c3ff);
+	background: linear-gradient(90deg,#0f0055,#4b3cff,#b4c3ff);
+}
+.simple-websides-title{
+	background: -webkit-linear-gradient(90deg,#156f51,#489d7d,#005232); /* Chrome 10-25, Safari 5.1-6 */ background: linear-gradient(90deg,#156f51,#489d7d,#005232); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.react-title{
+	background: -webkit-linear-gradient(90deg,#7f259d,#4c1976,#241149); /* Chrome 10-25, Safari 5.1-6 */ background: linear-gradient(90deg,#7f259d,#4c1976,#241149); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .shove-more-WebSides {
