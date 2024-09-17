@@ -1,5 +1,4 @@
-export function simpleWebSides(projectArr) {
-	const simpleWebSidesEl = document.querySelector('.simple-webSides-list-js');
+export function simpleWebSides(projectArr, simpleWebSidesEl) {
 
 	function setSimpleWebSidesMarkup(projectArrInner) {
 		return projectArrInner

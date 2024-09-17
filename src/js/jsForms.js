@@ -1,5 +1,4 @@
-export function jsForms(projectArr) {
-	const jsFormsEl = document.querySelector('.js-forms-list');
+export function jsForms(projectArr, jsFormsEl) {
 
 	function setFormMarkup(projectArrInner) {
 		return projectArrInner

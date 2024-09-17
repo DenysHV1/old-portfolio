@@ -1,5 +1,5 @@
-export function jsFeatures(projectArr) {
-	const jsFeaturesEl = document.querySelector('.js-features-list');
+export function jsFeatures(projectArr, jsFeaturesEl) {
+	
 	function setFeaturesMarkup(projectArrInner) {
 		return projectArrInner
 			.map(

@@ -10,16 +10,15 @@
 .main-title {
 	font-size: 48px;
 	font-family: 'Nerko One', cursive;
-	margin-bottom: 20px;
-	margin-top: 20px;
 	color: rgb(29, 0, 109);
+	margin-bottom: 20px;
+	margin-top: 10px;
 }
 
 .section-style {
 	width: 100%;
-	padding-top: 20px;
-	padding-bottom: 50px;
-	min-height: 500px;
+	margin-bottom: 20px;
+
 }
 
 .list-style {
@@ -27,7 +26,6 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 20px;
-	margin-top: 30px;
 	position: relative;
 }
 
@@ -173,9 +171,9 @@
 .title {
 	font-size: 36px;
 	font-weight: 400;
-	background-color: #fff;
-	color: rgb(29, 0, 109);
-	max-width: 500px;
+	background-color: #181717;
+	color: rgb(251, 255, 11);
+	width: 500px;
 	font-family: 'Nerko One', cursive;
 	margin-left: -200px;
 	text-align: right;
@@ -186,7 +184,7 @@
 .shove-more-WebSides {
 	font-family: 'Nerko One', cursive;
 	position: absolute;
-	bottom: -40px;
+	bottom: -10px;
 	padding: 5px 30px;
 	background-image: -webkit-linear-gradient(
 		90deg,

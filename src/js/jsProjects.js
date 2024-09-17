@@ -1,5 +1,4 @@
-export function jsProjects(projectArr) {
-	const jsProjectsEl = document.querySelector('.js-projects-list');
+export function jsProjects(projectArr, jsProjectsEl) {
 
 	function setJsProjectsMarkup(projectArrInner) {
 		return projectArrInner

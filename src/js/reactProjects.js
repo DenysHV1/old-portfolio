@@ -1,5 +1,4 @@
-export function reactProjects(projectArr) {
-	const reactListEl = document.querySelector('.react-list');
+export function reactProjects(projectArr, reactListEl) {
 
 	function setReactMarkup(projectArrInner) {
 		return projectArrInner

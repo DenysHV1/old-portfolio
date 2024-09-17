@@ -1,5 +1,4 @@
-export function jsGames(projectArr) {
-	const jsGamesEl = document.querySelector('.js-games-list');
+export function jsGames(projectArr, jsGamesEl) {
 
 	function setGamesMarkup(projectArrInner) {
 		return projectArrInner
