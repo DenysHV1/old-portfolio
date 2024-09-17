@@ -19,6 +19,8 @@ body {
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	background: -webkit-linear-gradient(90deg, #000000, #75151d, #000000);
+	background: linear-gradient(90deg, #000000, #75151d, #000000);
 }
 
 .container {
@@ -28,7 +30,7 @@ body {
 	padding-right: 15px;
 }
 
-.js-games{
+/* .js-games{
 	background: -webkit-linear-gradient(90deg,#0008ff,#1e36f1,#4f5af8);
 	background: linear-gradient(90deg,#0008ff,#1e36f1,#4f5af8);
 }
@@ -51,4 +53,4 @@ body {
 .simple-websides{
 	background: -webkit-linear-gradient(90deg,#0011ff,#8c00ff);
 	background: linear-gradient(90deg,#0011ff,#8c00ff);
-}
+} */

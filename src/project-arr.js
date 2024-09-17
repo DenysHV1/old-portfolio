@@ -26,6 +26,7 @@ import textHidden from './img/text-hidden.png';
 import themeBlackWhite from './img/ThemeBlackWhite.png';
 import ticTacToe from './img/tic-tac-toe.png';
 import mechanicalWatch from './img/time-info.png';
+import userProfileElements from './img/user-profile-elements.png';
 
 export const projectArr = [
 	{
@@ -730,27 +731,27 @@ export const projectArr = [
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
-		nameOfProjectGit: '',
+		nameOfProjectGit: 'user-profile-elements-react',
 		nameOFProjectPreviewText: 'Name:',
-		nameOFProjectPreview: '',
+		nameOFProjectPreview: 'User Elements',
 		categoryText: 'Category:',
-		category: 'Web Side',
+		category: 'React',
 		typeOfProjectText: 'Type of project',
 		typeOfProject: 'Solo',
-		status: false,
-		imgPreview: '',
-		imgGallery: '',
-		alt: '',
+		status: true,
+		imgPreview: userProfileElements,
+		imgGallery: userProfileElements,
+		alt: 'User Elements',
 		codeLinkText: 'Code',
-		codeLink: '',
+		codeLink: 'https://github.com/DenysHV1/user-profile-elements-react',
 		siteText: 'Site',
-		siteLink: '',
+		siteLink: 'https://denyshv1.github.io/user-profile-elements-react/',
 		technologyText: 'Technology:',
-		technology1: 'html+css',
+		technology1: 'React.js',
 		technology2: 'JavaScript',
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 1,
 	},
 ];
