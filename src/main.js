@@ -17,7 +17,6 @@ featuresBtn.addEventListener('click', () => {
 		jsFeaturesEl.classList.remove('is-open');
 		click1 = 0;
 	}
-
 });
 
 //todo -------------------------------------
@@ -36,7 +35,6 @@ formsBtn.addEventListener('click', () => {
 		jsFormsEl.classList.remove('is-open');
 		click2 = 0;
 	}
-
 });
 
 //todo -------------------------------------
@@ -56,7 +54,6 @@ gamesBtn.addEventListener('click', () => {
 		jsGamesEl.classList.remove('is-open');
 		click3 = 0;
 	}
-
 });
 
 //todo -------------------------------------
@@ -76,7 +73,6 @@ jsProjectsBtn.addEventListener('click', () => {
 		jsProjectsEl.classList.remove('is-open');
 		click4 = 0;
 	}
-
 });
 
 //todo -------------------------------------
@@ -96,7 +92,6 @@ webSidesBtn.addEventListener('click', () => {
 		simpleWebSidesEl.classList.remove('is-open');
 		click5 = 0;
 	}
-
 });
 
 //todo -------------------------------------
@@ -116,7 +111,6 @@ reactBtn.addEventListener('click', () => {
 		reactListEl.classList.remove('is-open');
 		click6 = 0;
 	}
-
 });
 
 //todo --------------------------------------

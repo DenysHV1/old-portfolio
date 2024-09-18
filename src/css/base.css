@@ -9,8 +9,7 @@ html {
 
 html,
 body {
-
-	font-family: "SUSE", sans-serif;
+	font-family: 'SUSE', sans-serif;
 	height: 100%;
 	width: 100%;
 	font-size: 100%;
@@ -30,36 +29,16 @@ body {
 	padding-right: 15px;
 }
 
-
 /* / */
-.js-games-list{
-transform: translateX(-150%);
-padding-top: 0;
-padding-bottom: 0;
-position: absolute;
-
-}
-
-.js-games-list.is-open{
-	transform: translateX(0);
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 20px;
-	position: relative;
-	padding-top: 20px;
-	padding-bottom: 60px;
-	min-height: auto;
-}
-/* / */
-.js-forms-list{
+.js-games-list {
 	transform: translateX(-150%);
 	padding-top: 0;
 	padding-bottom: 0;
 	position: absolute;
+	visibility: hidden;
 }
 
-.js-forms-list.is-open{
+.js-games-list.is-open {
 	transform: translateX(0);
 	display: flex;
 	justify-content: center;
@@ -68,17 +47,19 @@ position: absolute;
 	position: relative;
 	padding-top: 20px;
 	padding-bottom: 60px;
-	min-height: auto;
+	visibility: visible;
+	visibility: visible;
 }
 /* / */
-.js-features-list{
+.js-forms-list {
 	transform: translateX(-150%);
 	padding-top: 0;
 	padding-bottom: 0;
 	position: absolute;
+	visibility: hidden;
 }
 
-.js-features-list.is-open{
+.js-forms-list.is-open {
 	transform: translateX(0);
 	display: flex;
 	justify-content: center;
@@ -87,17 +68,18 @@ position: absolute;
 	position: relative;
 	padding-top: 20px;
 	padding-bottom: 60px;
-	min-height: auto;
+	visibility: visible;
 }
 /* / */
-.js-projects-list{
+.js-features-list {
 	transform: translateX(-150%);
 	padding-top: 0;
 	padding-bottom: 0;
 	position: absolute;
+	visibility: hidden;
 }
 
-.js-projects-list.is-open{
+.js-features-list.is-open {
 	transform: translateX(0);
 	display: flex;
 	justify-content: center;
@@ -106,17 +88,18 @@ position: absolute;
 	position: relative;
 	padding-top: 20px;
 	padding-bottom: 60px;
-	min-height: auto;
+	visibility: visible;
 }
 /* / */
-.simple-webSides-list-js{
+.js-projects-list {
 	transform: translateX(-150%);
 	padding-top: 0;
 	padding-bottom: 0;
 	position: absolute;
+	visibility: hidden;
 }
 
-.simple-webSides-list-js.is-open{
+.js-projects-list.is-open {
 	transform: translateX(0);
 	display: flex;
 	justify-content: center;
@@ -125,17 +108,18 @@ position: absolute;
 	position: relative;
 	padding-top: 20px;
 	padding-bottom: 60px;
-	min-height: auto;
+	visibility: visible;
 }
 /* / */
-.react-list{
+.simple-webSides-list-js {
 	transform: translateX(-150%);
 	padding-top: 0;
 	padding-bottom: 0;
 	position: absolute;
+	visibility: hidden;
 }
 
-.react-list.is-open{
+.simple-webSides-list-js.is-open {
 	transform: translateX(0);
 	display: flex;
 	justify-content: center;
@@ -144,6 +128,26 @@ position: absolute;
 	position: relative;
 	padding-top: 20px;
 	padding-bottom: 60px;
-	min-height: 500px;
+	visibility: visible;
+}
+/* / */
+.react-list {
+	transform: translateX(-150%);
+	padding-top: 0;
+	padding-bottom: 0;
+	position: absolute;
+	visibility: hidden;
+}
+
+.react-list.is-open {
+	transform: translateX(0);
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 60px;
+	visibility: visible;
 }
 /* / */
