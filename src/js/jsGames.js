@@ -1,7 +1,8 @@
 export function jsGames(projectArr, jsGamesEl) {
 
 	function setGamesMarkup(projectArrInner) {
-		return projectArrInner
+		const arr = projectArrInner.toSorted((a, b) => b.ProjectNumber - a.ProjectNumber);
+		return arr
 			.map(
 				({
 					nameOfProjectGitText,

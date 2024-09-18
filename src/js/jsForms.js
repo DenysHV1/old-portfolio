@@ -1,7 +1,8 @@
 export function jsForms(projectArr, jsFormsEl) {
 
 	function setFormMarkup(projectArrInner) {
-		return projectArrInner
+		const arr = projectArrInner.toSorted((a, b) => b.ProjectNumber - a.ProjectNumber);
+		return arr
 			.map(
 				({
 					nameOfProjectGitText,
