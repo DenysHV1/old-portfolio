@@ -10,9 +10,12 @@
 .main-title {
 	font-size: 48px;
 	font-family: 'Nerko One', cursive;
-	color: rgb(0, 119, 193);
+	color: rgb(20, 20, 20);
+	text-shadow: 1px 1px 2px rgb(255, 255, 255);
 	margin-bottom: 20px;
 	margin-top: 10px;
+	background-color: #e7e7e70f;
+	padding: 5px 0 10px 5px;
 }
 
 .section-style {
@@ -174,9 +177,9 @@
 
 .title {
 	font-size: 36px;
-	font-weight: 400;
-	background-color: #181717;
-	color: rgb(251, 255, 11);
+	font-weight: 500;
+	color: rgb(0, 0, 0);
+	text-shadow: 4px 4px 4px rgba(145, 145, 145, 0.63);
 	width: 500px;
 	font-family: 'Nerko One', cursive;
 	margin-left: -200px;
@@ -186,48 +189,123 @@
 }
 
 .js-features-title {
-	background: -webkit-linear-gradient(90deg, #0f0055, #4b3cff, #b4c3ff);
-	background: linear-gradient(90deg, #0f0055, #4b3cff, #b4c3ff);
+	background: -webkit-linear-gradient(90deg, #00c4cc, #6420ff, #7d2ae7);
+	background: linear-gradient(90deg, #00c4cc, #6420ff, #7d2ae7);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.js-features-title:hover {
+	transform: scale(1.1);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+		rgba(255, 255, 255, 0.477) 0px -3px 0px inset;
+}
+.js-features-title:focus {
+	transform: scale(1.1);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+		rgba(255, 255, 255, 0.477) 0px -3px 0px inset;
 }
 .js-forms-title {
-	background: -webkit-linear-gradient(90deg, #0f0055, #4b3cff, #b4c3ff);
-	background: linear-gradient(90deg, #0f0055, #4b3cff, #b4c3ff);
+	background: -webkit-linear-gradient(90deg, #00c4cc, #6420ff, #7d2ae7);
+	background: linear-gradient(90deg, #00c4cc, #6420ff, #7d2ae7);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.js-forms-title:hover {
+	transform: scale(1.1);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+		rgba(255, 255, 255, 0.477) 0px -3px 0px inset;
+}
+.js-forms-title:focus {
+	transform: scale(1.1);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+		rgba(255, 255, 255, 0.477) 0px -3px 0px inset;
 }
 .js-games-title {
-	background: -webkit-linear-gradient(90deg, #0f0055, #4b3cff, #b4c3ff);
-	background: linear-gradient(90deg, #0f0055, #4b3cff, #b4c3ff);
+	background: -webkit-linear-gradient(90deg, #00c4cc, #6420ff, #7d2ae7);
+	background: linear-gradient(90deg, #00c4cc, #6420ff, #7d2ae7);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.js-games-title:hover {
+	transform: scale(1.1);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+		rgba(255, 255, 255, 0.477) 0px -3px 0px inset;
+}
+.js-games-title:focus {
+	transform: scale(1.1);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+		rgba(255, 255, 255, 0.477) 0px -3px 0px inset;
+}
+
 .js-projects-title {
-	background: -webkit-linear-gradient(90deg, #0f0055, #4b3cff, #b4c3ff);
-	background: linear-gradient(90deg, #0f0055, #4b3cff, #b4c3ff);
+	background: -webkit-linear-gradient(90deg, #00c4cc, #6420ff, #7d2ae7);
+	background: linear-gradient(90deg, #00c4cc, #6420ff, #7d2ae7);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.js-projects-title:hover {
+	transform: scale(1.1);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+		rgba(255, 255, 255, 0.477) 0px -3px 0px inset;
+}
+.js-projects-title:focus {
+	transform: scale(1.1);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+		rgba(255, 255, 255, 0.477) 0px -3px 0px inset;
+}
+
 .simple-websides-title {
-	background: -webkit-linear-gradient(
-		90deg,
-		#156f51,
-		#489d7d,
-		#005232
-	); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(
-		90deg,
-		#156f51,
-		#489d7d,
-		#005232
-	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: -webkit-linear-gradient(90deg, #156f51, #489d7d, #005232);
+	background: linear-gradient(90deg, #156f51, #489d7d, #005232);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.simple-websides-title:hover {
+	transform: scale(1.1);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+		rgba(255, 255, 255, 0.477) 0px -3px 0px inset;
+}
+.simple-websides-title:focus {
+	transform: scale(1.1);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+		rgba(255, 255, 255, 0.477) 0px -3px 0px inset;
+}
+
 .react-title {
-	background: -webkit-linear-gradient(
-		90deg,
-		#7f259d,
-		#4c1976,
-		#241149
-	); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(
-		90deg,
-		#7f259d,
-		#4c1976,
-		#241149
-	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: -webkit-linear-gradient(90deg, #7f259d, #4c1976, #241149);
+	background: linear-gradient(90deg, #7f259d, #55108e, #241149);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.react-title:hover {
+	transform: scale(1.1);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+		rgba(255, 255, 255, 0.477) 0px -3px 0px inset;
+}
+.react-title:focus {
+	transform: scale(1.1);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+		rgba(255, 255, 255, 0.477) 0px -3px 0px inset;
 }
 
 .shove-more-WebSides {
