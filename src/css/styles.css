@@ -7,6 +7,7 @@
 @import url('./base.css');
 @import url('./reset.css');
 
+
 .main-title {
 	font-size: 48px;
 	font-family: 'Nerko One', cursive;
@@ -23,12 +24,16 @@
 }
 
 .list-style {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 20px;
-	position: relative;
+	/* transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1); */
+	transition-property: transform, position;
+	transition-duration: 1s, 1s;
+	transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1), cubic-bezier(0.075, 0.82, 0.165, 1);
+
 }
+
+/* .js-features-list{
+	transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+} */
 
 .img-container {
 	overflow: hidden;
