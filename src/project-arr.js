@@ -52,7 +52,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 2,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -77,7 +77,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 7,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -102,7 +102,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 1,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -127,7 +127,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 3,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -152,7 +152,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 6,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -177,7 +177,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 9,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -202,7 +202,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 11,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -227,7 +227,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 1,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -252,7 +252,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 2,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -277,7 +277,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 6,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -302,7 +302,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 3,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -327,7 +327,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 7,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -352,7 +352,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 8,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -377,7 +377,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 5,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -402,7 +402,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 3,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -427,7 +427,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 1,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -452,7 +452,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 1,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -477,7 +477,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 8,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -502,7 +502,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 2,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -527,7 +527,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 12,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -552,7 +552,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 2,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -577,7 +577,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 4,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -652,7 +652,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 4,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -677,7 +677,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 5,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -727,7 +727,7 @@ export const projectArr = [
 		descriptionText: 'Description',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 0,
+		ProjectNumber: 10,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
