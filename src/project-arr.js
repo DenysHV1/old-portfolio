@@ -27,6 +27,7 @@ import themeBlackWhite from './img/ThemeBlackWhite.png';
 import ticTacToe from './img/tic-tac-toe.png';
 import mechanicalWatch from './img/time-info.png';
 import userProfileElements from './img/user-profile-elements.png';
+import reactEvtElements from './img/onClick-evt.png';
 
 export const projectArr = [
 	{
@@ -753,5 +754,30 @@ export const projectArr = [
 		description: '',
 		projectNumTExt: 'Project number:',
 		ProjectNumber: 1,
+	},
+	{
+		nameOfProjectGitText: 'Git name:',
+		nameOfProjectGit: 'onClick-events-react',
+		nameOFProjectPreviewText: 'Name:',
+		nameOFProjectPreview: 'User Event onClick Elements',
+		categoryText: 'Category:',
+		category: 'React',
+		typeOfProjectText: 'Type of project',
+		typeOfProject: 'Solo',
+		status: true,
+		imgPreview: reactEvtElements,
+		imgGallery: reactEvtElements,
+		alt: 'User event Elements',
+		codeLinkText: 'Code',
+		codeLink: 'https://github.com/DenysHV1/onClick-events-react',
+		siteText: 'Site',
+		siteLink: 'https://denyshv1.github.io/onClick-events-react/',
+		technologyText: 'Technology:',
+		technology1: 'React.js',
+		technology2: 'JavaScript',
+		descriptionText: 'Description',
+		description: '',
+		projectNumTExt: 'Project number:',
+		ProjectNumber: 2,
 	},
 ];
