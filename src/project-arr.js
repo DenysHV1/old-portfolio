@@ -28,6 +28,7 @@ import ticTacToe from './img/tic-tac-toe.png';
 import mechanicalWatch from './img/time-info.png';
 import userProfileElements from './img/user-profile-elements.png';
 import reactEvtElements from './img/onClick-evt.png';
+import reactTodoList from './img/React/todoList-react.png'
 
 export const projectArr = [
 	{
@@ -779,5 +780,30 @@ export const projectArr = [
 		description: '',
 		projectNumTExt: 'Project number:',
 		ProjectNumber: 2,
+	},
+	{
+		nameOfProjectGitText: 'Git name:',
+		nameOfProjectGit: 'todoList-react',
+		nameOFProjectPreviewText: 'Name:',
+		nameOFProjectPreview: 'To do list',
+		categoryText: 'Category:',
+		category: 'React',
+		typeOfProjectText: 'Type of project',
+		typeOfProject: 'Solo',
+		status: true,
+		imgPreview: reactTodoList,
+		imgGallery: reactTodoList,
+		alt: 'To do list',
+		codeLinkText: 'Code',
+		codeLink: 'https://github.com/DenysHV1/todoList-react',
+		siteText: 'Site',
+		siteLink: 'https://denyshv1.github.io/todoList-react/',
+		technologyText: 'Technology:',
+		technology1: 'React.js',
+		technology2: 'JavaScript',
+		descriptionText: 'Description',
+		description: '',
+		projectNumTExt: 'Project number:',
+		ProjectNumber: 3,
 	},
 ];
