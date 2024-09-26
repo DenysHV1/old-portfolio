@@ -104,9 +104,9 @@ export function reactProjects(projectArr, reactListEl) {
 		});
 		reactListEl.insertAdjacentHTML(
 			'beforeend',
-			`<button type="button" class="shove-more-WebSides"></button>`
+			`<button type="button" class="shove-more-btn"></button>`
 		);
-		const ReactBtn = reactListEl.querySelector('.shove-more-WebSides');
+		const ReactBtn = reactListEl.querySelector('.shove-more-btn');
 		let isExpanded = false;
 
 		ReactBtn.textContent = 'Shove more';

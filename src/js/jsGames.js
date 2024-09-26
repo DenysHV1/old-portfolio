@@ -103,9 +103,9 @@ export function jsGames(projectArr, jsGamesEl) {
 		});
 		jsGamesEl.insertAdjacentHTML(
 			'beforeend',
-			`<button type="button" class="shove-more-WebSides"></button>`
+			`<button type="button" class="shove-more-btn"></button>`
 		);
-		const WebSidesBtn = jsGamesEl.querySelector('.shove-more-WebSides');
+		const WebSidesBtn = jsGamesEl.querySelector('.shove-more-btn');
 		let isExpanded = false;
 		WebSidesBtn.textContent = 'Shove more';
 		WebSidesBtn.addEventListener('click', () => {

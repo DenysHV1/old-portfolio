@@ -103,9 +103,9 @@ export function jsForms(projectArr, jsFormsEl) {
 		});
 		jsFormsEl.insertAdjacentHTML(
 			'beforeend',
-			`<button type="button" class="shove-more-WebSides"></button>`
+			`<button type="button" class="shove-more-btn"></button>`
 		);
-		const WebSidesBtn = jsFormsEl.querySelector('.shove-more-WebSides');
+		const WebSidesBtn = jsFormsEl.querySelector('.shove-more-btn');
 		let isExpanded = false;
 		WebSidesBtn.textContent = 'Shove more';
 		WebSidesBtn.addEventListener('click', () => {
