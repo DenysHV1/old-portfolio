@@ -68,9 +68,15 @@ reactAnother(projectArr, reactAnotherEl);
 jsAnotherBtn.addEventListener('click', () => {
 	if (click1 === 0) {
 		jsAnotherEl.classList.add('is-open');
+		jsMainEl.classList.remove('is-open');
+		htmlCssMainEl.classList.remove('is-open');
+		reactMainEl.classList.remove('is-open');
+		htmlCssAnotherEl.classList.remove('is-open');
+		reactAnotherEl.classList.remove('is-open');
 		click1 += 1;
 	} else {
 		jsAnotherEl.classList.remove('is-open');
+
 		click1 = 0;
 	}
 });
@@ -78,9 +84,15 @@ jsAnotherBtn.addEventListener('click', () => {
 jsMainBtn.addEventListener('click', () => {
 	if (click2 === 0) {
 		jsMainEl.classList.add('is-open');
+		jsAnotherEl.classList.remove('is-open');
+		htmlCssMainEl.classList.remove('is-open');
+		reactMainEl.classList.remove('is-open');
+		htmlCssAnotherEl.classList.remove('is-open');
+		reactAnotherEl.classList.remove('is-open');
 		click2 += 1;
 	} else {
 		jsMainEl.classList.remove('is-open');
+
 		click2 = 0;
 	}
 });
@@ -88,9 +100,15 @@ jsMainBtn.addEventListener('click', () => {
 htmlCssMainBtn.addEventListener('click', () => {
 	if (click3 === 0) {
 		htmlCssMainEl.classList.add('is-open');
+		reactMainEl.classList.remove('is-open');
+		htmlCssAnotherEl.classList.remove('is-open');
+		reactAnotherEl.classList.remove('is-open');
+		jsAnotherEl.classList.remove('is-open');
+		jsMainEl.classList.remove('is-open');
 		click3 += 1;
 	} else {
 		htmlCssMainEl.classList.remove('is-open');
+
 		click3 = 0;
 	}
 });
@@ -98,9 +116,15 @@ htmlCssMainBtn.addEventListener('click', () => {
 reactMainBtn.addEventListener('click', () => {
 	if (click4 === 0) {
 		reactMainEl.classList.add('is-open');
+		htmlCssAnotherEl.classList.remove('is-open');
+		reactAnotherEl.classList.remove('is-open');
+		jsAnotherEl.classList.remove('is-open');
+		jsMainEl.classList.remove('is-open');
+		htmlCssMainEl.classList.remove('is-open');
 		click4 += 1;
 	} else {
 		reactMainEl.classList.remove('is-open');
+
 		click4 = 0;
 	}
 });
@@ -108,9 +132,15 @@ reactMainBtn.addEventListener('click', () => {
 htmlCssAnotherBtn.addEventListener('click', () => {
 	if (click5 === 0) {
 		htmlCssAnotherEl.classList.add('is-open');
+		jsAnotherEl.classList.remove('is-open');
+		jsMainEl.classList.remove('is-open');
+		htmlCssMainEl.classList.remove('is-open');
+		reactMainEl.classList.remove('is-open');
+		reactAnotherEl.classList.remove('is-open');
 		click5 += 1;
 	} else {
 		htmlCssAnotherEl.classList.remove('is-open');
+
 		click5 = 0;
 	}
 });
@@ -118,6 +148,11 @@ htmlCssAnotherBtn.addEventListener('click', () => {
 reactAnotherBtn.addEventListener('click', () => {
 	if (click6 === 0) {
 		reactAnotherEl.classList.add('is-open');
+		jsAnotherEl.classList.remove('is-open');
+		jsMainEl.classList.remove('is-open');
+		htmlCssMainEl.classList.remove('is-open');
+		reactMainEl.classList.remove('is-open');
+		htmlCssAnotherEl.classList.remove('is-open');
 		click6 += 1;
 	} else {
 		reactAnotherEl.classList.remove('is-open');
