@@ -32,7 +32,7 @@ body {
 }
 
 /* / */
-.js-games-list {
+.js-another-list {
 	transform: translateX(-150%);
 	padding-top: 0;
 	padding-bottom: 0;
@@ -40,7 +40,7 @@ body {
 	visibility: hidden;
 }
 
-.js-games-list.is-open {
+.js-another-list.is-open {
 	transform: translateX(0);
 	display: flex;
 	justify-content: center;
@@ -53,7 +53,7 @@ body {
 	visibility: visible;
 }
 /* / */
-.js-forms-list {
+.js-main-list {
 	transform: translateX(-150%);
 	padding-top: 0;
 	padding-bottom: 0;
@@ -61,7 +61,7 @@ body {
 	visibility: hidden;
 }
 
-.js-forms-list.is-open {
+.js-main-list.is-open {
 	transform: translateX(0);
 	display: flex;
 	justify-content: center;
@@ -73,7 +73,7 @@ body {
 	visibility: visible;
 }
 /* / */
-.js-features-list {
+.html-css-main-list {
 	transform: translateX(-150%);
 	padding-top: 0;
 	padding-bottom: 0;
@@ -81,7 +81,7 @@ body {
 	visibility: hidden;
 }
 
-.js-features-list.is-open {
+.html-css-main-list.is-open {
 	transform: translateX(0);
 	display: flex;
 	justify-content: center;
@@ -93,7 +93,7 @@ body {
 	visibility: visible;
 }
 /* / */
-.js-projects-list {
+.html-css-another-list {
 	transform: translateX(-150%);
 	padding-top: 0;
 	padding-bottom: 0;
@@ -101,7 +101,7 @@ body {
 	visibility: hidden;
 }
 
-.js-projects-list.is-open {
+.html-css-another-list.is-open {
 	transform: translateX(0);
 	display: flex;
 	justify-content: center;
@@ -113,7 +113,7 @@ body {
 	visibility: visible;
 }
 /* / */
-.simple-webSides-list-js {
+.react-main-list {
 	transform: translateX(-150%);
 	padding-top: 0;
 	padding-bottom: 0;
@@ -121,7 +121,7 @@ body {
 	visibility: hidden;
 }
 
-.simple-webSides-list-js.is-open {
+.react-main-list.is-open {
 	transform: translateX(0);
 	display: flex;
 	justify-content: center;
@@ -133,7 +133,7 @@ body {
 	visibility: visible;
 }
 /* / */
-.react-list {
+.react-another-list {
 	transform: translateX(-150%);
 	padding-top: 0;
 	padding-bottom: 0;
@@ -141,7 +141,7 @@ body {
 	visibility: hidden;
 }
 
-.react-list.is-open {
+.react-another-list.is-open {
 	transform: translateX(0);
 	display: flex;
 	justify-content: center;

@@ -1,4 +1,4 @@
-export function simpleWebSides(projectArr, simpleWebSidesEl) {
+export function htmlCssAnother(projectArr, htmlCssAnother) {
 
 	function setSimpleWebSidesMarkup(projectArrInner) {
 		const arr = projectArrInner.toSorted((a, b) =>b.ProjectNumber - a.ProjectNumber);
@@ -29,7 +29,7 @@ export function simpleWebSides(projectArr, simpleWebSidesEl) {
 					projectNumTExt,
 					ProjectNumber,
 				}) => {
-					if (status && category === 'Web Sides') {
+					if (status && category === 'html css another') {
 						return `
 			<li class="project-item">
 	<div class="img-container">
@@ -84,46 +84,46 @@ export function simpleWebSides(projectArr, simpleWebSidesEl) {
 			)
 			.join('');
 	}
-	simpleWebSidesEl.insertAdjacentHTML(
+	htmlCssAnother.insertAdjacentHTML(
 		'beforeend',
 		setSimpleWebSidesMarkup(projectArr)
 	);
 
-	const simpleWebSidesItem = simpleWebSidesEl.querySelectorAll('li');
+	const htmlCssAnotherItem = htmlCssAnother.querySelectorAll('li');
 
 	//todo 1
-	if (simpleWebSidesItem.length <= 2 && simpleWebSidesEl.offsetWidth > 1100) {
-		simpleWebSidesEl.style.justifyContent = 'start';
+	if (htmlCssAnotherItem.length <= 2 && htmlCssAnother.offsetWidth > 1100) {
+		htmlCssAnother.style.justifyContent = 'start';
 	} else {
-		simpleWebSidesEl.style.justifyContent = 'center';
+		htmlCssAnother.style.justifyContent = 'center';
 	}
 
 	//todo 2
-	if (simpleWebSidesItem.length >= 4) {
-		simpleWebSidesItem.forEach((item, inx) => {
+	if (htmlCssAnotherItem.length >= 4) {
+		htmlCssAnotherItem.forEach((item, inx) => {
 			if (inx > 2) {
 				item.style.display = 'none';
 			}
 		});
-		simpleWebSidesEl.insertAdjacentHTML(
+		htmlCssAnother.insertAdjacentHTML(
 			'beforeend',
 			`<button type="button" class="shove-more-btn"></button>`
 		);
-		const WebSidesBtn = simpleWebSidesEl.querySelector('.shove-more-btn');
+		const WebSidesBtn = htmlCssAnother.querySelector('.shove-more-btn');
 		let isExpanded = false;
 
 		WebSidesBtn.textContent = 'Shove more';
 		WebSidesBtn.addEventListener('click', () => {
 			if (isExpanded) {
 				WebSidesBtn.textContent = 'Shove more';
-				simpleWebSidesItem.forEach((item, inx) => {
+				htmlCssAnotherItem.forEach((item, inx) => {
 					if (inx > 2) {
 						item.style.display = 'none';
 					}
 				});
 			} else {
 				WebSidesBtn.textContent = 'Hide';
-				simpleWebSidesItem.forEach(item => {
+				htmlCssAnotherItem.forEach(item => {
 					item.style.display = 'block';
 				});
 			}

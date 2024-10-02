@@ -1,6 +1,6 @@
-export function jsForms(projectArr, jsFormsEl) {
+export function reactMain(projectArr, reactMain) {
 
-	function setFormMarkup(projectArrInner) {
+	function setJsProjectsMarkup(projectArrInner) {
 		const arr = projectArrInner.toSorted((a, b) => b.ProjectNumber - a.ProjectNumber);
 		return arr
 			.map(
@@ -29,7 +29,7 @@ export function jsForms(projectArr, jsFormsEl) {
 					projectNumTExt,
 					ProjectNumber,
 				}) => {
-					if (status && category === 'Forms') {
+					if (status && category === 'React main') {
 						return `
 			<li class="project-item">
 	<div class="img-container">
@@ -84,41 +84,42 @@ export function jsForms(projectArr, jsFormsEl) {
 			)
 			.join('');
 	}
-	jsFormsEl.insertAdjacentHTML('beforeend', setFormMarkup(projectArr));
+	reactMain.insertAdjacentHTML('beforeend', setJsProjectsMarkup(projectArr));
 
-	const jsFormsElItems = jsFormsEl.querySelectorAll('li');
+	const reactMainItems = reactMain.querySelectorAll('li');
 
-	if (jsFormsElItems.length <= 2 && jsFormsEl.offsetWidth > 1100) {
-		jsFormsEl.style.justifyContent = 'start';
+	if (reactMainItems.length <= 2 && reactMain.offsetWidth > 1100) {
+		reactMain.style.justifyContent = 'start';
 	} else {
-		jsFormsEl.style.justifyContent = 'center';
+		reactMain.style.justifyContent = 'center';
 	}
 
 	//todo 2
-	if (jsFormsElItems.length >= 4) {
-		jsFormsElItems.forEach((item, inx) => {
+	if (reactMainItems.length >= 4) {
+		reactMainItems.forEach((item, inx) => {
 			if (inx > 2) {
 				item.style.display = 'none';
 			}
 		});
-		jsFormsEl.insertAdjacentHTML(
+		reactMain.insertAdjacentHTML(
 			'beforeend',
 			`<button type="button" class="shove-more-btn"></button>`
 		);
-		const WebSidesBtn = jsFormsEl.querySelector('.shove-more-btn');
+
+		const WebSidesBtn = reactMain.querySelector('.shove-more-btn');
 		let isExpanded = false;
 		WebSidesBtn.textContent = 'Shove more';
 		WebSidesBtn.addEventListener('click', () => {
 			if (isExpanded) {
 				WebSidesBtn.textContent = 'Shove more';
-				jsFormsElItems.forEach((item, inx) => {
+				reactMainItems.forEach((item, inx) => {
 					if (inx > 2) {
 						item.style.display = 'none';
 					}
 				});
 			} else {
 				WebSidesBtn.textContent = 'Hide';
-				jsFormsElItems.forEach(item => {
+				reactMainItems.forEach(item => {
 					item.style.display = 'block';
 				});
 			}

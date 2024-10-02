@@ -1,48 +1,48 @@
 import { projectArr } from './project-arr';
 
-import { jsFeatures } from './js/jsFeatures';
-import { jsForms } from './js/jsForms';
-import { jsGames } from './js/jsGames';
-import { jsProjects } from './js/jsProjects';
-import { simpleWebSides } from './js/simpleWebSides';
-import { reactProjects } from './js/reactProjects';
+import { jsAnother } from './js/jsAnother';
+import { jsMain } from './js/jsMain';
+import { htmlCssMain } from './js/htmlCssMain';
+import { reactMain } from './js/reactMain';
+import { htmlCssAnother } from './js/htmlCssAnother';
+import { reactAnother } from './js/reactAnother';
 
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const lists = {
-	jsFeaturesEl: document.querySelector('.js-features-list'),
-	jsFormsEl: document.querySelector('.js-forms-list'),
-	jsGamesEl: document.querySelector('.js-games-list'),
-	jsProjectsEl: document.querySelector('.js-projects-list'),
-	simpleWebSidesEl: document.querySelector('.simple-webSides-list-js'),
-	reactListEl: document.querySelector('.react-list'),
+	jsAnotherEl: document.querySelector('.js-another-list'),
+	jsMainEl: document.querySelector('.js-main-list'),
+	htmlCssMainEl: document.querySelector('.html-css-main-list'),
+	reactMainEl: document.querySelector('.react-main-list'),
+	htmlCssAnotherEl: document.querySelector('.html-css-another-list'),
+	reactAnotherEl: document.querySelector('.react-another-list'),
 };
 const {
-	jsFeaturesEl,
-	jsFormsEl,
-	jsGamesEl,
-	jsProjectsEl,
-	simpleWebSidesEl,
-	reactListEl,
+	jsAnotherEl,
+	jsMainEl,
+	htmlCssMainEl,
+	reactMainEl,
+	htmlCssAnotherEl,
+	reactAnotherEl,
 } = lists;
 
 const mainMenuButtons = {
-	featuresBtn: document.querySelector('.js-features-btn'),
-	formsBtn: document.querySelector('.js-forms-btn'),
-	gamesBtn: document.querySelector('.js-games-btn'),
-	jsProjectsBtn: document.querySelector('.js-projects-btn'),
-	webSidesBtn: document.querySelector('.simple-websides-btn'),
-	reactBtn: document.querySelector('.react-btn'),
+	jsAnotherBtn: document.querySelector('.js-another-btn'),
+	jsMainBtn: document.querySelector('.js-main-btn'),
+	htmlCssMainBtn: document.querySelector('.html-css-main-btn'),
+	reactMainBtn: document.querySelector('.js-react-main'),
+	htmlCssAnotherBtn: document.querySelector('.html-css-another-btn'),
+	reactAnotherBtn: document.querySelector('.js-react-another'),
 };
 
 const {
-	featuresBtn,
-	formsBtn,
-	gamesBtn,
-	jsProjectsBtn,
-	webSidesBtn,
-	reactBtn,
+	jsAnotherBtn,
+	jsMainBtn,
+	htmlCssMainBtn,
+	reactMainBtn,
+	htmlCssAnotherBtn,
+	reactAnotherBtn,
 } = mainMenuButtons;
 
 let clicks = {
@@ -57,70 +57,70 @@ let clicks = {
 let { click1, click2, click3, click4, click5, click6 } = clicks;
 
 //todo render markup
-jsFeatures(projectArr, jsFeaturesEl);
-jsForms(projectArr, jsFormsEl);
-jsGames(projectArr, jsGamesEl);
-jsProjects(projectArr, jsProjectsEl);
-simpleWebSides(projectArr, simpleWebSidesEl);
-reactProjects(projectArr, reactListEl);
+jsAnother(projectArr, jsAnotherEl);
+jsMain(projectArr, jsMainEl);
+htmlCssMain(projectArr, htmlCssMainEl);
+reactMain(projectArr, reactMainEl);
+htmlCssAnother(projectArr, htmlCssAnotherEl);
+reactAnother(projectArr, reactAnotherEl);
 
 //todo menu events
-featuresBtn.addEventListener('click', () => {
+jsAnotherBtn.addEventListener('click', () => {
 	if (click1 === 0) {
-		jsFeaturesEl.classList.add('is-open');
+		jsAnotherEl.classList.add('is-open');
 		click1 += 1;
 	} else {
-		jsFeaturesEl.classList.remove('is-open');
+		jsAnotherEl.classList.remove('is-open');
 		click1 = 0;
 	}
 });
 
-formsBtn.addEventListener('click', () => {
+jsMainBtn.addEventListener('click', () => {
 	if (click2 === 0) {
-		jsFormsEl.classList.add('is-open');
+		jsMainEl.classList.add('is-open');
 		click2 += 1;
 	} else {
-		jsFormsEl.classList.remove('is-open');
+		jsMainEl.classList.remove('is-open');
 		click2 = 0;
 	}
 });
 
-gamesBtn.addEventListener('click', () => {
+htmlCssMainBtn.addEventListener('click', () => {
 	if (click3 === 0) {
-		jsGamesEl.classList.add('is-open');
+		htmlCssMainEl.classList.add('is-open');
 		click3 += 1;
 	} else {
-		jsGamesEl.classList.remove('is-open');
+		htmlCssMainEl.classList.remove('is-open');
 		click3 = 0;
 	}
 });
 
-jsProjectsBtn.addEventListener('click', () => {
+reactMainBtn.addEventListener('click', () => {
 	if (click4 === 0) {
-		jsProjectsEl.classList.add('is-open');
+		reactMainEl.classList.add('is-open');
 		click4 += 1;
 	} else {
-		jsProjectsEl.classList.remove('is-open');
+		reactMainEl.classList.remove('is-open');
 		click4 = 0;
 	}
 });
 
-webSidesBtn.addEventListener('click', () => {
+htmlCssAnotherBtn.addEventListener('click', () => {
 	if (click5 === 0) {
-		simpleWebSidesEl.classList.add('is-open');
+		htmlCssAnotherEl.classList.add('is-open');
 		click5 += 1;
 	} else {
-		simpleWebSidesEl.classList.remove('is-open');
+		htmlCssAnotherEl.classList.remove('is-open');
 		click5 = 0;
 	}
 });
 
-reactBtn.addEventListener('click', () => {
+reactAnotherBtn.addEventListener('click', () => {
 	if (click6 === 0) {
-		reactListEl.classList.add('is-open');
+		reactAnotherEl.classList.add('is-open');
 		click6 += 1;
 	} else {
-		reactListEl.classList.remove('is-open');
+		reactAnotherEl.classList.remove('is-open');
 		click6 = 0;
 	}
 });

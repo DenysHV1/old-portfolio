@@ -1,6 +1,6 @@
-export function jsGames(projectArr, jsGamesEl) {
+export function jsMain(projectArr, jsMain) {
 
-	function setGamesMarkup(projectArrInner) {
+	function setFormMarkup(projectArrInner) {
 		const arr = projectArrInner.toSorted((a, b) => b.ProjectNumber - a.ProjectNumber);
 		return arr
 			.map(
@@ -29,7 +29,7 @@ export function jsGames(projectArr, jsGamesEl) {
 					projectNumTExt,
 					ProjectNumber,
 				}) => {
-					if (status && category === 'Games') {
+					if (status && category === 'JS main') {
 						return `
 			<li class="project-item">
 	<div class="img-container">
@@ -84,41 +84,41 @@ export function jsGames(projectArr, jsGamesEl) {
 			)
 			.join('');
 	}
-	jsGamesEl.insertAdjacentHTML('beforeend', setGamesMarkup(projectArr));
+	jsMain.insertAdjacentHTML('beforeend', setFormMarkup(projectArr));
 
-	const jsGamesElItems = jsGamesEl.querySelectorAll('li');
+	const jsMainItems = jsMain.querySelectorAll('li');
 
-	if (jsGamesElItems.length <= 2 && jsGamesEl.offsetWidth > 1100) {
-		jsGamesEl.style.justifyContent = 'start';
+	if (jsMainItems.length <= 2 && jsMain.offsetWidth > 1100) {
+		jsMain.style.justifyContent = 'start';
 	} else {
-		jsGamesEl.style.justifyContent = 'center';
+		jsMain.style.justifyContent = 'center';
 	}
 
 	//todo 2
-	if (jsGamesElItems.length >= 4) {
-		jsGamesElItems.forEach((item, inx) => {
+	if (jsMainItems.length >= 4) {
+		jsMainItems.forEach((item, inx) => {
 			if (inx > 2) {
 				item.style.display = 'none';
 			}
 		});
-		jsGamesEl.insertAdjacentHTML(
+		jsMain.insertAdjacentHTML(
 			'beforeend',
 			`<button type="button" class="shove-more-btn"></button>`
 		);
-		const WebSidesBtn = jsGamesEl.querySelector('.shove-more-btn');
+		const WebSidesBtn = jsMain.querySelector('.shove-more-btn');
 		let isExpanded = false;
 		WebSidesBtn.textContent = 'Shove more';
 		WebSidesBtn.addEventListener('click', () => {
 			if (isExpanded) {
 				WebSidesBtn.textContent = 'Shove more';
-				jsGamesElItems.forEach((item, inx) => {
+				jsMainItems.forEach((item, inx) => {
 					if (inx > 2) {
 						item.style.display = 'none';
 					}
 				});
 			} else {
 				WebSidesBtn.textContent = 'Hide';
-				jsGamesElItems.forEach(item => {
+				jsMainItems.forEach(item => {
 					item.style.display = 'block';
 				});
 			}

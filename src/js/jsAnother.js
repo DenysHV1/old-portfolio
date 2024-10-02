@@ -1,4 +1,4 @@
-export function jsFeatures(projectArr, jsFeaturesEl) {
+export function jsAnother(projectArr, jsAnother) {
 	
 	function setFeaturesMarkup(projectArrInner) {
 		const arr = projectArrInner.toSorted((a, b) => b.ProjectNumber - a.ProjectNumber);
@@ -29,7 +29,7 @@ export function jsFeatures(projectArr, jsFeaturesEl) {
 					projectNumTExt,
 					ProjectNumber,
 				}) => {
-					if (status && category === 'JS Features') {
+					if (status && category === 'JS another') {
 						return `
 			<li class="project-item">
 	<div class="img-container">
@@ -84,41 +84,41 @@ export function jsFeatures(projectArr, jsFeaturesEl) {
 			)
 			.join('');
 	}
-	jsFeaturesEl.insertAdjacentHTML('beforeend', setFeaturesMarkup(projectArr));
+	jsAnother.insertAdjacentHTML('beforeend', setFeaturesMarkup(projectArr));
 
-	const jsFeaturesElItems = jsFeaturesEl.querySelectorAll('li');
+	const jsAnotherItems = jsAnother.querySelectorAll('li');
 
-	if (jsFeaturesElItems.length <= 2 && jsFeaturesEl.offsetWidth > 1100) {
-		jsFeaturesEl.style.justifyContent = 'start';
+	if (jsAnotherItems.length <= 2 && jsAnother.offsetWidth > 1100) {
+		jsAnother.style.justifyContent = 'start';
 	} else {
-		jsFeaturesEl.style.justifyContent = 'center';
+		jsAnother.style.justifyContent = 'center';
 	}
 
 	//todo 2
-	if (jsFeaturesElItems.length >= 4) {
-		jsFeaturesElItems.forEach((item, inx) => {
+	if (jsAnotherItems.length >= 4) {
+		jsAnotherItems.forEach((item, inx) => {
 			if (inx > 2) {
 				item.style.display = 'none';
 			}
 		});
-		jsFeaturesEl.insertAdjacentHTML(
+		jsAnother.insertAdjacentHTML(
 			'beforeend',
 			`<button type="button" class="shove-more-btn"></button>`
 		);
-		const WebSidesBtn = jsFeaturesEl.querySelector('.shove-more-btn');
+		const WebSidesBtn = jsAnother.querySelector('.shove-more-btn');
 		let isExpanded = false;
 		WebSidesBtn.textContent = 'Shove more';
 		WebSidesBtn.addEventListener('click', () => {
 			if (isExpanded) {
 				WebSidesBtn.textContent = 'Shove more';
-				jsFeaturesElItems.forEach((item, inx) => {
+				jsAnotherItems.forEach((item, inx) => {
 					if (inx > 2) {
 						item.style.display = 'none';
 					}
 				});
 			} else {
 				WebSidesBtn.textContent = 'Hide';
-				jsFeaturesElItems.forEach(item => {
+				jsAnotherItems.forEach(item => {
 					item.style.display = 'block';
 				});
 			}

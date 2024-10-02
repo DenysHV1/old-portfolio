@@ -1,4 +1,4 @@
-export function reactProjects(projectArr, reactListEl) {
+export function reactAnother(projectArr, reactAnother) {
 
 	function setReactMarkup(projectArrInner) {
 		const arr = projectArrInner.toSorted((a, b) => b.ProjectNumber - a.ProjectNumber);
@@ -29,7 +29,7 @@ export function reactProjects(projectArr, reactListEl) {
 					projectNumTExt,
 					ProjectNumber,
 				}) => {
-					if (status && category === 'React') {
+					if (status && category === 'React another') {
 						return `
 			<li class="project-item">
 	<div class="img-container">
@@ -84,43 +84,43 @@ export function reactProjects(projectArr, reactListEl) {
 			)
 			.join('');
 	}
-	reactListEl.insertAdjacentHTML('beforeend', setReactMarkup(projectArr));
+	reactAnother.insertAdjacentHTML('beforeend', setReactMarkup(projectArr));
 
-	const reactListElItem = reactListEl.querySelectorAll('li');
+	const reactAnotherItems = reactAnother.querySelectorAll('li');
 
 	//todo 1
-	if (reactListElItem.length <= 2 && reactListEl.offsetWidth > 1100) {
-		reactListEl.style.justifyContent = 'start';
+	if (reactAnotherItems.length <= 2 && reactAnother.offsetWidth > 1100) {
+		reactAnother.style.justifyContent = 'start';
 	} else {
-		reactListEl.style.justifyContent = 'center';
+		reactAnother.style.justifyContent = 'center';
 	}
 
 	//todo 2
-	if (reactListElItem.length >= 4) {
-		reactListElItem.forEach((item, inx) => {
+	if (reactAnotherItems.length >= 4) {
+		reactAnotherItems.forEach((item, inx) => {
 			if (inx > 2) {
 				item.style.display = 'none';
 			}
 		});
-		reactListEl.insertAdjacentHTML(
+		reactAnother.insertAdjacentHTML(
 			'beforeend',
 			`<button type="button" class="shove-more-btn"></button>`
 		);
-		const ReactBtn = reactListEl.querySelector('.shove-more-btn');
+		const ReactBtn = reactAnother.querySelector('.shove-more-btn');
 		let isExpanded = false;
 
 		ReactBtn.textContent = 'Shove more';
 		ReactBtn.addEventListener('click', () => {
 			if (isExpanded) {
 				ReactBtn.textContent = 'Shove more';
-				reactListElItem.forEach((item, inx) => {
+				reactAnotherItems.forEach((item, inx) => {
 					if (inx > 2) {
 						item.style.display = 'none';
 					}
 				});
 			} else {
 				ReactBtn.textContent = 'Hide';
-				reactListElItem.forEach(item => {
+				reactAnotherItems.forEach(item => {
 					item.style.display = 'block';
 				});
 			}
