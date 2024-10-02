@@ -30,6 +30,7 @@ import userProfileElements from './img/user-profile-elements.png';
 import reactEvtElements from './img/onClick-evt.png';
 import reactTodoList from './img/React/todoList-react.png'
 import reactPixabay from './img/React/pixabay-react.png'
+import pokemonsReact from './img/React/pokemon-react.png'
 
 export const projectArr = [
 	{
@@ -80,7 +81,7 @@ export const projectArr = [
 		descriptionText: '',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 7,
+		ProjectNumber: 2,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -155,7 +156,7 @@ export const projectArr = [
 		descriptionText: '',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 6,
+		ProjectNumber: 10,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -180,7 +181,7 @@ export const projectArr = [
 		descriptionText: '',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 9,
+		ProjectNumber: 13,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -205,7 +206,7 @@ export const projectArr = [
 		descriptionText: '',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 11,
+		ProjectNumber: 16,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -280,7 +281,7 @@ export const projectArr = [
 		descriptionText: '',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 6,
+		ProjectNumber: 1,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -305,7 +306,7 @@ export const projectArr = [
 		descriptionText: '',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 3,
+		ProjectNumber: 14,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -430,7 +431,7 @@ export const projectArr = [
 		descriptionText: '',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 1,
+		ProjectNumber: 4,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -455,7 +456,7 @@ export const projectArr = [
 		descriptionText: '',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 1,
+		ProjectNumber: 5,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -463,7 +464,7 @@ export const projectArr = [
 		nameOFProjectPreviewText: 'Name:',
 		nameOFProjectPreview: 'Blue Collar',
 		categoryText: 'Category:',
-		category: 'html css main',
+		category: 'JS main',
 		typeOfProjectText: 'Type of project',
 		typeOfProject: 'Solo',
 		status: true,
@@ -480,7 +481,7 @@ export const projectArr = [
 		descriptionText: '',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 8,
+		ProjectNumber: 4,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -505,7 +506,7 @@ export const projectArr = [
 		descriptionText: '',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 2,
+		ProjectNumber: 12,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -530,7 +531,7 @@ export const projectArr = [
 		descriptionText: '',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 12,
+		ProjectNumber: 17,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -555,7 +556,7 @@ export const projectArr = [
 		descriptionText: '',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 2,
+		ProjectNumber: 15,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -655,7 +656,7 @@ export const projectArr = [
 		descriptionText: '',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 4,
+		ProjectNumber: 6,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -680,7 +681,7 @@ export const projectArr = [
 		descriptionText: '',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 5,
+		ProjectNumber: 11,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -730,7 +731,7 @@ export const projectArr = [
 		descriptionText: '',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 10,
+		ProjectNumber: 9,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -805,7 +806,7 @@ export const projectArr = [
 		descriptionText: '',
 		description: '',
 		projectNumTExt: 'Project number:',
-		ProjectNumber: 3,
+		ProjectNumber: 1,
 	},
 	{
 		nameOfProjectGitText: 'Git name:',
@@ -831,5 +832,30 @@ export const projectArr = [
 		description: '',
 		projectNumTExt: 'Project number:',
 		ProjectNumber: 3,
+	},
+	{
+		nameOfProjectGitText: 'Git name:',
+		nameOfProjectGit: 'pokemons-react',
+		nameOFProjectPreviewText: 'Name:',
+		nameOFProjectPreview: 'Pokemons',
+		categoryText: 'Category:',
+		category: 'React main',
+		typeOfProjectText: 'Type of project',
+		typeOfProject: 'Solo',
+		status: true,
+		imgPreview: pokemonsReact,
+		imgGallery: pokemonsReact,
+		alt: 'Pokemons',
+		codeLinkText: 'Code',
+		codeLink: 'https://github.com/DenysHV1/pokemons-react',
+		siteText: 'Site',
+		siteLink: 'https://denyshv1.github.io/pokemons-react/',
+		technologyText: 'Technology:',
+		technology1: 'React.js',
+		technology2: 'JavaScript',
+		descriptionText: '',
+		description: '',
+		projectNumTExt: 'Project number:',
+		ProjectNumber: 2,
 	},
 ];
