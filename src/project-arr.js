@@ -29,6 +29,7 @@ import mechanicalWatch from './img/time-info.png';
 import userProfileElements from './img/user-profile-elements.png';
 import reactEvtElements from './img/onClick-evt.png';
 import reactTodoList from './img/React/todoList-react.png'
+import reactPixabay from './img/React/pixabay-react.png'
 
 export const projectArr = [
 	{
@@ -798,6 +799,31 @@ export const projectArr = [
 		codeLink: 'https://github.com/DenysHV1/todoList-react',
 		siteText: 'Site',
 		siteLink: 'https://denyshv1.github.io/todoList-react/',
+		technologyText: 'Technology:',
+		technology1: 'React.js',
+		technology2: 'JavaScript',
+		descriptionText: 'Description',
+		description: '',
+		projectNumTExt: 'Project number:',
+		ProjectNumber: 3,
+	},
+	{
+		nameOfProjectGitText: 'Git name:',
+		nameOfProjectGit: 'http-react',
+		nameOFProjectPreviewText: 'Name:',
+		nameOFProjectPreview: 'Pixabay search',
+		categoryText: 'Category:',
+		category: 'React another',
+		typeOfProjectText: 'Type of project',
+		typeOfProject: 'Solo',
+		status: true,
+		imgPreview: reactPixabay,
+		imgGallery: reactPixabay,
+		alt: 'Pixabay search',
+		codeLinkText: 'Code',
+		codeLink: 'https://github.com/DenysHV1/http-react',
+		siteText: 'Site',
+		siteLink: 'https://denyshv1.github.io/http-react/',
 		technologyText: 'Technology:',
 		technology1: 'React.js',
 		technology2: 'JavaScript',
