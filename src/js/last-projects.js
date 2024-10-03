@@ -96,7 +96,7 @@ export function lastProjectsSlider(block) {
 	const rightBtnEl = document.querySelector('.lastProjects-btn-right-js');
 	// const width = block.offsetWidth + 44;
 	let swipe = 415;
-	if (mainBlock.clientWidth < 392) {
+	if (mainBlock.clientWidth < 410) {
 		swipe = 365;
 	}
 	let position = 0;
