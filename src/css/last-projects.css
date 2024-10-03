@@ -89,5 +89,20 @@
 		min-width: 325px;
 		max-width: 325px;
 	}
+
+	.lastProjects-nav-btns {
+		left: 41px;
+		bottom: 80px;
+	}
+}
+
+.fffff{
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	font-size: 40px;
+	font-weight: 900;
+	opacity: 0.7;
+	color: #f4f4f4;
 }
 
