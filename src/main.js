@@ -1,5 +1,7 @@
 import { projectArr } from './project-arr';
 
+import { lastProjects } from './js/last-projects';
+import { lastProjectsSlider } from './js/last-projects';
 import { jsAnother } from './js/jsAnother';
 import { jsMain } from './js/jsMain';
 import { htmlCssMain } from './js/htmlCssMain';
@@ -11,6 +13,7 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const lists = {
+	lastProjectsEl: document.querySelector('.last-projects-list'),
 	jsAnotherEl: document.querySelector('.js-another-list'),
 	jsMainEl: document.querySelector('.js-main-list'),
 	htmlCssMainEl: document.querySelector('.html-css-main-list'),
@@ -19,6 +22,7 @@ const lists = {
 	reactAnotherEl: document.querySelector('.react-another-list'),
 };
 const {
+	lastProjectsEl,
 	jsAnotherEl,
 	jsMainEl,
 	htmlCssMainEl,
@@ -57,12 +61,14 @@ let clicks = {
 let { click1, click2, click3, click4, click5, click6 } = clicks;
 
 //todo render markup
+lastProjects(projectArr, lastProjectsEl)
 jsAnother(projectArr, jsAnotherEl);
 jsMain(projectArr, jsMainEl);
 htmlCssMain(projectArr, htmlCssMainEl);
 reactMain(projectArr, reactMainEl);
 htmlCssAnother(projectArr, htmlCssAnotherEl);
 reactAnother(projectArr, reactAnotherEl);
+
 
 //todo menu events
 jsAnotherBtn.addEventListener('click', () => {
@@ -176,3 +182,5 @@ technologyItems.forEach(item => {
 		item.style.display = 'none';
 	}
 });
+
+lastProjectsSlider(lastProjectsEl)
