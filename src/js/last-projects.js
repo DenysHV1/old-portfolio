@@ -1,36 +1,38 @@
 export function lastProjects(projectArr, lastProjectsEl) {
-
 	function setSimpleWebSidesMarkup(projectArrInner) {
 		const arrInner = [];
-		for (let i = projectArrInner.length - 1; i >=0; i--){
-			arrInner.push(projectArrInner[i])
+		for (let i = projectArrInner.length - 1; i >= 0; i--) {
+			arrInner.push(projectArrInner[i]);
 		}
-		console.log(arrInner)
+		console.log(arrInner);
 		return arrInner
 			.map(
-				({
-					nameOfProjectGitText,
-					nameOfProjectGit,
-					nameOFProjectPreviewText,
-					nameOFProjectPreview,
-					categoryText,
-					category,
-					typeOfProjectText,
-					typeOfProject,
-					status,
-					imgPreview,
-					imgGallery,
-					alt,
-					codeLinkText,
-					codeLink,
-					siteText,
-					siteLink,
-					technologyText,
-					technology1,
-					technology2,
-					descriptionText,
-					description,
-				}, idx) => {
+				(
+					{
+						nameOfProjectGitText,
+						nameOfProjectGit,
+						nameOFProjectPreviewText,
+						nameOFProjectPreview,
+						categoryText,
+						category,
+						typeOfProjectText,
+						typeOfProject,
+						status,
+						imgPreview,
+						imgGallery,
+						alt,
+						codeLinkText,
+						codeLink,
+						siteText,
+						siteLink,
+						technologyText,
+						technology1,
+						technology2,
+						descriptionText,
+						description,
+					},
+					idx
+				) => {
 					if (status) {
 						return `
 			<li class="project-item-swiper">
@@ -88,49 +90,46 @@ export function lastProjects(projectArr, lastProjectsEl) {
 	);
 }
 
-
 export function lastProjectsSlider(block) {
-	const mainBlock = document.querySelector('.last-projects-block')
+	const mainBlock = document.querySelector('.last-projects-block');
 	const leftBtnEl = document.querySelector('.lastProjects-btn-left-js');
 	const rightBtnEl = document.querySelector('.lastProjects-btn-right-js');
 	// const width = block.offsetWidth + 44;
 	let swipe = 415;
-	if(mainBlock.clientWidth < 392){
-		swipe = 365
+	if (mainBlock.clientWidth < 392) {
+		swipe = 365;
 	}
 	let position = 0;
 
 	rightBtnEl.addEventListener('click', () => {
 		position -= swipe;
 		const maxPosition = block.children.length * swipe - swipe;
-		let max= -maxPosition;
-		// if(mainBlock.clientWidth > 1600){
-		// 	max = -maxPosition + 1170;
-		// }else if(mainBlock.clientWidth > 1500 && mainBlock.clientWidth < 1600){
-		// 	max = -maxPosition + 1070;
-		// }else if(mainBlock.clientWidth > 1400 && mainBlock.clientWidth < 1500){
-		// 	max = -maxPosition + 970;
-		// }else if(mainBlock.clientWidth > 1300 && mainBlock.clientWidth < 1400){
-		// 	max = -maxPosition + 870;
-		// }else if(mainBlock.clientWidth > 1200 && mainBlock.clientWidth < 1300){
-		// 	max = -maxPosition + 770;
-		// }else if(mainBlock.clientWidth > 1100 && mainBlock.clientWidth < 1200){
-		// 	max = -maxPosition + 670;
-		// }else if(mainBlock.clientWidth > 1000 && mainBlock.clientWidth < 1100){
-		// 	max = -maxPosition + 570;
-		// }else if(mainBlock.clientWidth > 900 && mainBlock.clientWidth < 1000){
-		// 	max = -maxPosition + 470;
-		// }else if(mainBlock.clientWidth > 800 && mainBlock.clientWidth < 900){
-		// 	max = -maxPosition + 370;
-		// }else if(mainBlock.clientWidth > 700 && mainBlock.clientWidth < 800){
-		// 	max = -maxPosition + 270;
-		// }else if(mainBlock.clientWidth > 600 && mainBlock.clientWidth < 700){
-		// 	max = -maxPosition + 170;
-		// }else if(mainBlock.clientWidth > 500 && mainBlock.clientWidth < 600){
-		// 	max = -maxPosition + 70;
-		// }else {
-		// 	max = -maxPosition;
-		// }
+		let max = -maxPosition;
+		if (mainBlock.clientWidth > 1600) {
+			max = -maxPosition + 1170;
+		} else if (mainBlock.clientWidth > 1500 && mainBlock.clientWidth < 1600) {
+			max = -maxPosition + 1070;
+		} else if (mainBlock.clientWidth > 1400 && mainBlock.clientWidth < 1500) {
+			max = -maxPosition + 970;
+		} else if (mainBlock.clientWidth > 1300 && mainBlock.clientWidth < 1400) {
+			max = -maxPosition + 870;
+		} else if (mainBlock.clientWidth > 1200 && mainBlock.clientWidth < 1300) {
+			max = -maxPosition + 770;
+		} else if (mainBlock.clientWidth > 1100 && mainBlock.clientWidth < 1200) {
+			max = -maxPosition + 670;
+		} else if (mainBlock.clientWidth > 1000 && mainBlock.clientWidth < 1100) {
+			max = -maxPosition + 570;
+		} else if (mainBlock.clientWidth > 900 && mainBlock.clientWidth < 1000) {
+			max = -maxPosition + 470;
+		} else if (mainBlock.clientWidth > 800 && mainBlock.clientWidth < 900) {
+			max = -maxPosition + 370;
+		} else if (mainBlock.clientWidth > 700 && mainBlock.clientWidth < 800) {
+			max = -maxPosition + 270;
+		} else if (mainBlock.clientWidth > 600 && mainBlock.clientWidth < 700) {
+			max = -maxPosition + 170;
+		} else if (mainBlock.clientWidth > 500 && mainBlock.clientWidth < 600) {
+			max = -maxPosition + 70;
+		}
 		if (position <= max) {
 			position = max;
 			rightBtnEl.style.opacity = '0.6';

@@ -24,7 +24,7 @@
 .last-projects-block {
 	position: relative;
 	border: 1px solid #ddd;
-	padding: 11px 41px 90px 41px;
+	padding: 11px 41px 50px 41px;
 	overflow: hidden;
 	margin-top: 20px;
 	background-color: #808abd;
@@ -46,9 +46,7 @@
 	display: grid;
 	grid-template-columns: 50px 50px;
 	gap: 21px;
-	position: absolute;
-	left: 41px;
-	bottom: 40px;
+	margin-top: 30px;
 }
 
 .project-item-swiper{
@@ -64,13 +62,6 @@
 }
 
 
-@media screen  and (max-width:1400px){
-
-	.lastProjects-nav-btns {
-		left: 41px;
-		bottom: 20px;
-	}
-}
 
 @media screen  and (max-width:460px){
 	.last-projects-block {
@@ -82,7 +73,7 @@
 
 @media screen  and (max-width:395px){
 	.last-projects-block {
-		padding: 5px 5px 60px 5px;
+		padding: 5px 5px 20px 5px;
 		margin-top: 42px;
 	}
 	.project-item-swiper{
@@ -90,10 +81,6 @@
 		max-width: 325px;
 	}
 
-	.lastProjects-nav-btns {
-		left: 41px;
-		bottom: 80px;
-	}
 }
 
 .fffff{
