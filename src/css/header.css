@@ -3,7 +3,7 @@
 	width: 100%;
 	background-image: url('../img/bg/header-picture.png'),
 		linear-gradient(90deg, #3d4052, #282a36, #09090c);
-	background-position: 50% 65%, center;
+	background-position: 30% 65%, center;
 	background-repeat: no-repeat no-repeat;
 	background-size: 620px, cover;
 	padding-top: 10px;
