@@ -38,6 +38,8 @@ export function reactAnother(projectArr, reactAnother) {
 		class="gallery-image"
 		src="${imgPreview}"
 		alt="${alt}"
+				width="355"
+		height="200"
 		/>
 		</a>
 	</div>

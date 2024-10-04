@@ -38,6 +38,8 @@ export function jsMain(projectArr, jsMain) {
 		class="gallery-image"
 		src="${imgPreview}"
 		alt="${alt}"
+				width="355"
+		height="200"
 		/>
 		</a>
 	</div>
