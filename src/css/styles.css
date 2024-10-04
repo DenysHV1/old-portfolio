@@ -1,66 +1,16 @@
-@import url('./base.css');
 @import url('./reset.css');
 
 @import url('./header.css');
 @import url('./last-projects.css');
-@import url('./main-menu-buttons.css');
 @import url('./list-item.css');
+@import url('./portfolio.css');
 
-.main-title {
-	font-size: 48px;
-	font-family: 'Nerko One', cursive;
-	color: rgb(20, 20, 20);
-	text-shadow: 1px 1px 2px rgb(255, 255, 255);
-	margin-bottom: 20px;
-	margin-top: 10px;
-	background-color: #e7e7e70f;
-	padding: 5px 0 10px 5px;
+.container {
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
-.section-style {
-	width: 100%;
-	margin-bottom: 20px;
-}
 
-.list-style {
-	transition-property: transform, position;
-	transition-duration: 1s, 1s;
-	transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1),
-		cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-@media screen and (max-width: 600px) {
-	.main-title {
-		font-size: 36px;
-		padding: 5px 0 10px 5px;
-	}
-
-	.header {
-		position: absolute;
-		top: 15px;
-		right: 20px;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	.main-title {
-		font-size: 25px;
-		padding: 5px 0 10px 5px;
-	}
-
-	.header-socials-href {
-		width: 30px;
-		height: 30px;
-	}
-
-	.header {
-		gap: 8px;
-	}
-}
-
-@media screen and (max-width: 360px) {
-	.header {
-		gap: 8px;
-		margin-right: -25px;
-	}
+html,body{
+	scroll-behavior: smooth;
 }
