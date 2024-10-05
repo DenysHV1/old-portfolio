@@ -49,7 +49,7 @@
 
 @media screen and (max-width: 460px) {
 	.last-projects-block {
-		padding: 40px 10px 40px 10px;
+		padding: 40px 0 40px 0;
 
 	}
 	.last-projects_title {
@@ -62,12 +62,20 @@
 
 @media screen and (max-width: 395px) {
 	.last-projects-block {
-		padding: 40px 5px 40px 5px;
+		padding: 40px 0 40px 0;
 
 	}
-	.project-item-swiper {
+	.project-item-swiper.style {
 		min-width: 325px;
 		max-width: 325px;
+	}
+
+	.container-special{
+		max-width: 335px;
+		height: auto;
+		padding-left: 5px;
+		padding-right: 5px;
+		margin: 0 auto;
 	}
 }
 

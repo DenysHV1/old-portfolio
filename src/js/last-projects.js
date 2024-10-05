@@ -35,7 +35,7 @@ export function lastProjects(projectArr, lastProjectsEl) {
 				) => {
 					if (status) {
 						return `
-			<li class="project-item-swiper">
+			<li class="project-item-swiper style">
 	<div class="img-container">
 		<a class="gallery-link" width='1112px' height = '640px' href="${imgGallery}">
 		<img

@@ -1,6 +1,9 @@
+.portfolio{
+	background-image: linear-gradient(90deg, #3d4052, #282a36, #09090c);
+}
+
 .portfolio-inner{
 	width: 100%;
-	background-image: linear-gradient(90deg, #3d4052, #282a36, #09090c);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
