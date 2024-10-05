@@ -175,6 +175,15 @@ new SimpleLightbox('.project-item .img-container a', {
 	captionDelay: 250,
 });
 
+new SimpleLightbox('.project-item-swiper .img-container a', {
+	sourceAttr: 'href',
+	overlay: true,
+	nav: true,
+	captions: true,
+	captionsData: 'alt',
+	captionDelay: 250,
+});
+
 //todo fix for markup
 const technologyItems = document.querySelectorAll('.technology');
 technologyItems.forEach(item => {

@@ -51,26 +51,17 @@
 }
 /* socials */
 
-.logo{
+.logo {
 	font-family: 'Ubuntu', sans-serif;
 	color: white;
 	font-size: 36px;
 	font-weight: 700;
 }
 
-
-
-
-
-
-
-
-
 @media screen and (max-width: 500px) {
-	.logo{
+	.logo {
 		font-size: 36px;
 		padding-right: 20px;
-		
 	}
 	.header-socials-href {
 		width: 33px;
@@ -91,5 +82,4 @@
 }
 
 @media screen and (max-width: 365px) {
-
 }

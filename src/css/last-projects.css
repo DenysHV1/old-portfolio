@@ -19,7 +19,6 @@
 	position: relative;
 	padding: 40px 10px 40px 10px;
 	overflow: hidden;
-	height: 100vh;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -40,34 +39,30 @@
 	display: grid;
 	grid-template-columns: 50px 50px;
 	gap: 21px;
+	margin-top: 25px;
 }
 
 .project-item-swiper:hover{
 	transform: scale(1.05);
 }
 
-@media screen and (max-width: 1000px) {
-	.last-projects_title {
-		margin-bottom: 25px;
-	}
-}
 
 @media screen and (max-width: 460px) {
 	.last-projects-block {
-		padding: 10px 10px 60px 10px;
+		padding: 40px 10px 40px 10px;
 
 	}
 	.last-projects_title {
 		font-family: 'Ubuntu', sans-serif;
 		color: white;
 		font-size: 36px;
-		margin-bottom: 13px;
+		margin-bottom: 40px;
 	}
 }
 
 @media screen and (max-width: 395px) {
 	.last-projects-block {
-		padding: 5px 5px 20px 5px;
+		padding: 40px 5px 40px 5px;
 
 	}
 	.project-item-swiper {
