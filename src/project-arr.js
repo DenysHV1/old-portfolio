@@ -26,7 +26,7 @@ import textHidden from './img/text-hidden.jpg';
 import themeBlackWhite from './img/ThemeBlackWhite.jpg';
 import ticTacToe from './img/tic-tac-toe.jpg';
 import mechanicalWatch from './img/time-info.jpg';
-import reactEvtElements from './img/onClick-evt.jpg';
+import colorPaletteReact from './img/React/color-palette-react.jpg';
 import reactTodoList from './img/React/todoList-react.jpg';
 import reactPixabay from './img/React/pixabay-react.jpg';
 import pokemonsReact from './img/React/pokemon-react.jpg';
@@ -737,17 +737,17 @@ export const projectArr = [
 
 	{
 		nameOfProjectGitText: 'Git name:',
-		nameOfProjectGit: 'onClick-events-react',
+		nameOfProjectGit: 'color-palette-react',
 		nameOFProjectPreviewText: 'Name:',
-		nameOFProjectPreview: 'onClick Elements',
+		nameOFProjectPreview: 'Color palette',
 		categoryText: 'Category:',
 		category: 'React another',
 		typeOfProjectText: 'Type of project',
 		typeOfProject: 'Solo',
 		status: true,
-		imgPreview: reactEvtElements,
-		imgGallery: reactEvtElements,
-		alt: 'User event Elements',
+		imgPreview: colorPaletteReact,
+		imgGallery: colorPaletteReact,
+		alt: 'Color palette',
 		codeLinkText: 'Code',
 		codeLink: 'https://github.com/DenysHV1/onClick-events-react',
 		siteText: 'Site',
